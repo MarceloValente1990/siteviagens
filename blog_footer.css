@@ -1,0 +1,42 @@
+.blog{
+    background-color: rgba(190, 222, 218, 1);
+    height: 350px;   
+}
+.plane{
+    height: 60px;
+    margin-top: 40px;
+}
+#dicas{
+    border-bottom: solid rgb(20, 31, 180);
+    margin-bottom: 20px;
+    padding-bottom: 10px; 
+}
+#blog2{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: aqua;
+    margin-top: 15px;
+}
+.rodape{
+    background-color: #858383;
+   
+}
+#logo2{
+    width: 100px;
+}
+.power{
+    color: #180F4A;
+    font-family: "Jura", sans-serif;
+    font-size: 15px;
+}
+.icone{
+    text-decoration: none;
+    font-size: 37px;
+    padding-left: 1%;
+    color: #180F4A;
+}
