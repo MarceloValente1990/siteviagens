@@ -10,6 +10,7 @@
     border-bottom: solid rgb(20, 31, 180);
     margin-bottom: 20px;
     padding-bottom: 10px; 
+    font-family: "Rampart One", sans-serif; 
 }
 #blog2{
     text-decoration: none;
@@ -19,8 +20,10 @@
     text-align: center;
     padding: 10px;
     border-radius: 7px;
-    background-color: aqua;
+    background-color: transparent;
     margin-top: 15px;
+    
+
 }
 .rodape{
     background-color: #858383;
@@ -29,7 +32,7 @@
 #logo2{
     width: 100px;
 }
-.power{
+.copy{
     color: #180F4A;
     font-family: "Jura", sans-serif;
     font-size: 15px;

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="pt-pt">
+  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Marcelo Valente">
-        <meta name="description" content="Página exemplo">
-        <meta name="keywords" content="HTML, CSS, JS">
+        <meta name="author" content="Marcelo Valente, Simão, Cátia">
+        <meta name="description" content="Pagina de Viagens">
+        <meta name="keywords" content="Viagens Destinos Férias">
         <!--link css-->
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="carrossel.css">
-        <link rel="stylesheet" href="corpopag2.css">
-        <link rel="stylesheet" href="porto.css">
-        <link rel="stylesheet" href="blog_footer.css">
+        <link rel="stylesheet" href="style.css/nav.css">
+        <link rel="stylesheet" href="style.css/carrossel.css">
+        <link rel="stylesheet" href="style.css/corpopag2.css">
+        <link rel="stylesheet" href="style.css/porto.css">
+        <link rel="stylesheet" href="style.css/blog_footer.css">
         <!-- link icones -->
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
         <!-- link bootstrap -->
@@ -24,13 +24,14 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap" rel="stylesheet">
         <title>TripUP</title>
-    </head>
-    <body>
+  </head>
+  <body>
         <!-- nav  -->
-            <div class="container-fluid nav1">
+    <div class="container-fluid nav1">
                 <div class="row">
                     <P><a href="index.html"><img src="imagens/Logo_TripUP_Transparent.png" class="img-fluid" alt="" id="logo"></a></P>
                     <nav class="navbar navbar-expand-lg bg-transparent">
@@ -60,9 +61,9 @@
                         </div>
                       </nav>
                 </div>
-            </div>
+    </div>
 <!--carrossel-->
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -107,93 +108,84 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-<!--destinos-->
-<div class="container-fluid text-center corpopag2">
-    <div class="row justify-content-evenly rowcorpo2">
-        <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo2 p-0">
-            <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
-            <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
-            <figcaption id="letra"><a href="hippie.html" id="info" >+info</a></figcaption>
-            </figure>
-                <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
-                    <h1>Sudeste Asiático</h1><br><br>
-                    <p>Ilhas Phi Phi</p>
-                    <p>Vietnam</p>
-                    <p>Bali</p>
-                    <p>Cambodia</p>
-                    <p>Bangkok</p>
-                    <p>Laos</p><br><br>
-                    
-                </ul>
-                
-        </div>
-        <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo3 p-0">
-            <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
-            <img src="imagens/machu picchu.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
-            <figcaption id="letra"></figcaption>
-            </figure>
-                <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
-                    <h1>América do Sul</h1><br><br>
-                    <p>Machu Picchu</p>
-                    <p>Rio de Janeiro</p>
-                    <p>Buenos Aires</p>
-                    <p>Santiago</p>
-                    <p>Uchuaia</p>
-                    <p>Cartagena</p>
-                    <a href="hippie.html" id="info" >+info</a>
-                </ul>
-                
-        </div>
-        <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo4 p-0">
-            <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
-            <img src="imagens/paris.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
-            <figcaption id="letra">Europa</figcaption>
-            </figure>
-                <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
-                    <h1>Conheça</h1><br><br>
-                    <p>Paris</p>
-                    <p>Barcelona</p>
-                    <p>Roma</p>
-                    <p>Amsterdã</p>
-                    <p>Londres</p>
-                    <p>Lisboa</p><br><br>
-                    <a href="hippie.html" id="info" >+info</a>
-                </ul>
-                
-        </div>
-        <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo5 p-0">
-            <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
-            <img src="imagens/curação.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
-            <figcaption id="letra">Caribe</figcaption>
-            </figure>
-                <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
-                    <h1>Conheça</h1><br><br>
-                    <p>Punta Cana</p>
-                    <p>Bahamas</p>
-                    <p>Havana</p>
-                    <p>Curação</p>
-                    <p>Costa Rica</p>
-                    <p>Cancún</p><br><br>
-                    <a href="hippie.html" id="info" >+info</a>
-                </ul>
-                
-        </div>
-        
     </div>
-</div>
+<!--destinos-->
+  <div class="container-fluid text-center corpopag2">
+  <div class="row justify-content-evenly rowcorpo2">
+      <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo2 p-0">
+        <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
+        <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
+        <figcaption id="letra"><a href="hippie.html" id="info" >+info</a></figcaption>
+        </figure>
+        <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
+          <h1 class="hindex">Sudeste Asiático</h1><br><br>
+          <p>Ilhas Phi Phi</p>
+          <p>Vietnam</p>
+          <p>Bali</p>
+          <p>Cambodia</p>
+          <p>Bangkok</p>
+          <p>Laos</p><br><br> 
+        </ul>
+      </div>
+      <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo3 p-0">
+        <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
+        <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
+        <figcaption id="letra"><a href="hippie.html" id="info" >+info</a></figcaption>
+        </figure>
+        <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
+          <h1 class="hindex">Europa</h1><br><br>
+          <p>Paris</p>
+          <p>Barcelona</p>
+          <p>Roma</p>
+          <p>Amsterdã</p>
+          <p>Londres</p>
+          <p>Lisboa</p><br><br>
+        </ul>
+      </div>
+      <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo4 p-0">
+        <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
+        <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
+        <figcaption id="letra"><a href="hippie.html" id="info" >+info</a></figcaption>
+        </figure>
+        <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
+          <h1 class="hindex">Caribe</h1><br><br>
+          <p>Punta Cana</p>
+          <p>Bahamas</p>
+          <p>Havana</p>
+          <p>Curação</p>
+          <p>Riviera Maya</p>
+          <p>Costa Rica</p><br><br>
+        </ul>
+      </div>
+      <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo5 p-0">
+        <figure class="col-12 col-sm-6 col-md-5 d-flex flex-column p-0" >
+        <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
+        <figcaption id="letra"><a href="hippie.html" id="info" >+info</a></figcaption>
+        </figure>
+        <ul class="text-start textopag2 col-12 col-sm-6 col-md-5 d-flex flex-column">
+          <h1 class="hindex">América do Sul</h1><br><br>
+          <p>Rio de Janeiro</p>
+          <p>Recife</p>
+          <p>Buenos Aires</p>
+          <p>Machu Picchu</p>
+          <p>Santiago</p>
+          <p>Uchuaia</p><br><br>
+        </ul>
+      </div>
+  </div>
+  </div>
 <!--porto-->
-<div class="container-fluid text-center p-0 porto">
+  <div class="container-fluid text-center p-0 porto">
     <div class="row justify-content-evenly">
         <div class=" row col-12 d-flex flex-column text-start p-0">
-            <h1 class="textoporto">CONHEÇA O PORTO</h1>
+            <h1 class="textoporto">Conheça o Porto...</h1>
             <p>oi</p>
             <a href="" id="porto2" class=" row col-3  d-flex flex-column text-center">Não perca essa chance</a>
         </div>
     </div>
-</div>
+  </div>
 <!--blog-->
-<div class="container-fluid text-center p-0 blog">
+  <div class="container-fluid text-center p-0 blog">
     <div class="row justify-content-evenly">
         <div class=" row col-4 d-flex flex-column text-center p-0">
             <p><img src="imagens/plane.png" alt="" class="plane"></p>
@@ -204,9 +196,9 @@
         </div>
         <a href="" id="blog2" class=" row col-2 d-flex flex-column text-center">BLOG</a>
     </div>
-</div>
+  </div>
 <!-- footer -->
-<footer class=" container-fluid text-center rodape">
+  <footer class=" container-fluid text-center rodape">
     <div class="living">
         <p><img src="imagens/Logo_TripUP_Transparent.png" alt="" id="logo2"></p>
     </div>
@@ -217,10 +209,10 @@
             <a href="" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
         </P>
     </div>
-    <div class="power">
+    <div class="copy">
         <p>© Copyright 2025 TripUP® - Todos os direitos reservados - </p>
     </div>
-</footer>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

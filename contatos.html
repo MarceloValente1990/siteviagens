@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcelo Valente, Simão, Cátia">
+    <meta name="description" content="Pagina de Viagens">
+    <meta name="keywords" content="Viagens Destinos Férias">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css/navcontatos.css">
+    <link rel="stylesheet" href="style.css/contatos.css">
+       
+    <!-- link icones -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link icones -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+        
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap" rel="stylesheet">
+    <title>TripUP</title>
+</head>
+<body>
+<!-- nav  -->
+    <div class="container-fluid nav1">
+        <div class="row">
+            <P><a href="index.html"><img src="imagens/Logo_TripUP_Transparent.png" class="img-fluid" alt="" id="logo"></a></P>
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link row5" href="">Destinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link row5" href="#explora1">Campanhas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link row5" href="#celular2">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link row5" href="contatos.html">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!--contatos-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row col-12 justify-content-around coluna">
+                <div class="col-12 col-sm-5 col-md-4 coluna p-0">
+                    <img src="imagens/aviaopordosol.png" alt="" class="aviao">
+                </div>
+                <div id="textoPagina" class="col-12 col-sm-5 col-md-6 d-flex flex-column coluna">
+                    <h1 id="mundo">O MUNDO TE ESPERA</h1><br>
+                    <p class="pcont">Com a TripUP, cada viagem vira história pra contar. A gente não vende pacotes — a gente proporciona sonhos!</p>
+                    <p class="pcont">Seja praia, montanha ou cidade agitada, o destino é seu. O resto? Deixa com a TripUP🎈</p><br><br>
+                    <p><img src="imagens/email.png" alt="" class="iconemundo"> &nbsp;&nbsp;&nbsp;tripUP@tripUP.pt</p>
+                    <p><img src="imagens/phone-call.png" alt="" class="iconemundo"> &nbsp;&nbsp;&nbsp;+351 918 347 265</p>
+                    <p><img src="imagens/local.png" alt="" class="iconemundo"> &nbsp;&nbsp;&nbsp;Porto, Portugal</p>
+                </div>
+            </div>
+        </div>
+<!--mensagem-->
+        <div class="row justify-content-center fundo">
+            <img src="imagens/images.jpeg" class="imagem-fundo p-0">
+            
+            <div class="d-flex flex-column subscreva">
+                <div class=" row col-12 col-sm-5 col-md-4 d-flex flex-column text-center align-self-center p-0">
+                    <p><img src="imagens/communications.png" alt="" class="plane"></p>
+                    <h1 id="dicas">Subscreva no "Trip<span style="color: red;">UP</span>"</h1>
+                    <p>E esteja a par de tudo sobre Viagens</p>
+                </div>
+                <div class=" row text-start justify-content-evenly formulario">
+                    <div class="row col-12 col-sm-5 col-md-4">
+                        
+                        <input type="text" class="form-control" id="nome" placeholder="Insira seu nome" required>
+                    </div>
+                    <div class=" row col-12 col-sm-5 col-md-4">
+                        
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email" required>
+                    </div>
+                    <div class=" row col-12 col-sm-5 col-md-4">
+                        <button type="submit" class="btn btn-primary" id="infocontato" onclick="validationRequiredInput()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+    <footer class=" container-fluid text-center rodape">
+        <div class="living">
+            <p><img src="imagens/Logo_TripUP_Transparent.png" alt="" id="logo2"></p>
+        </div>
+        <div>
+            <P>
+                <a href="" class="icone"><i class="fi-brands-facebook"></i></a>
+                <a href="" class="icone"><i class="fi-brands-instagram"></i></a>
+                <a href="" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
+        </P>
+        </div>
+        <div class="copy">
+            <p>© Copyright 2025 TripUP® - Todos os direitos reservados - </p>
+        </div>
+    </footer>
+<body>
+    
+</body>
+</html>

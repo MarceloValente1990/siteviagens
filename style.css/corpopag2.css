@@ -1,10 +1,6 @@
 .corpopag2{
-    
-  
     width: 100%;
-    
 }
-
 .rowcorpo2{
     padding: 3%;
     background-color: rgba(190, 222, 218, 1);
@@ -14,11 +10,10 @@
     z-index: 3;
     margin-left: 75px;
     line-height: 15px;
-    padding-top: 25px;
-    
-
-
-    
+    padding-top: 25px;   
+}
+.hindex{
+    font-family: "Rampart One", sans-serif;
 }
 .imagemcorpopag2{
     border-bottom-right-radius: 185px;
@@ -27,17 +22,13 @@
     box-shadow: 40px 0px 10px 0px rgba(128, 128, 133, 0.3);
     width: 243px;
     height: 300px !important;
-    margin-right: 600px;
-    
-    
-   
+    margin-right: 600px;  
 }
 #letra{
     font-size: 26px;
     margin-left: 40px;
     margin-top: 25px;
-    font-weight: bolder;
-    
+    font-weight: bolder;   
 }
 #info{
     text-decoration: none;
@@ -46,9 +37,7 @@
     border: solid black;
     text-align: center;
     padding: 10px 50px 10px 50px;
-    border-radius: 10px;
-  
-    
+    border-radius: 10px;  
 }
 .colcorpo2{
    border-radius: 20px;
@@ -72,7 +61,6 @@
     width: 574px;
     height: 400px;
     margin-top: 250px !important;
-
 }
 .colcorpo5{
   border-radius: 20px;

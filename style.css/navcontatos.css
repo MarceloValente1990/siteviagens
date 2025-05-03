@@ -1,0 +1,29 @@
+
+.nav1{
+    background-color: rgba(49, 54, 54, 0.062);
+    z-index: 50;
+    position: fixed;
+    
+  }
+  .navbar-nav .nav-link {
+      font-size: 32px;
+      color:#180F4A;
+      font-family: "Rampart One", sans-serif; 
+      
+    }
+  .row5{
+      margin-top: 3px;
+      margin-left: 50px;
+      margin-bottom: 3px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      z-index: 3;   
+  }
+  #logo{
+    width: 90px;
+    position: absolute;
+    display: flex;
+    left: 1%;
+    top: 2%;
+    z-index: 70;
+  }
