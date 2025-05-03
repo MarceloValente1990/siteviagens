@@ -79,11 +79,11 @@
 
 .img-asia{
     position: absolute;
-    width: 25%;
+    width: 23%;
     z-index: 1;
     opacity: 0.9;
-    top: -60px;
-    left: 310px;
+    top: -54px;
+    left: 330px;
 }
 
 /* Estilos do conteúdo principal */
