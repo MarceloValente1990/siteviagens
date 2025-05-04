@@ -1,0 +1,275 @@
+.airplane {
+  position: fixed;
+  top: 0; /* Start at the top of the page */
+  right: 10px; /* Fixed horizontal position on the right */
+  font-size: 2rem; /* For emoji or icon */
+  color: #180F4A;; /* Cool blue color */
+  z-index: 1000;
+  transform: rotate(180deg); /* Rotate to point downward initially */
+  transition: top 0.1s ease, transform 0.8s ease; /* Smooth movement and rotation */
+  cursor: pointer; /* Indicate that the airplane is clickable */
+}
+
+.airplane:hover {
+  color: #0056b3; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge the airplane on hover */
+}
+
+.title-background{
+  background-image: url(Imagens/fundo.jpg);
+  height: 300px;
+;}
+
+.nav1 {
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 50;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-nav .nav-link {
+  font-size: 35px;
+  color: #180f4a;
+  font-family: "Rampart One", sans-serif;
+}
+
+.row5 {
+  margin-top: 3px;
+  margin-left: 50px;
+  margin-bottom: 3px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  z-index: 3;
+}
+
+#logo {
+  width: 90px;
+  position: absolute;
+  display: flex;
+  left: 1%;
+  top: 2%;
+  z-index: 70;
+}
+.page-header {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  height: 40vh; /* Adjusted height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header-content h1 {
+  font-size: 2.5rem; /* Adjusted font size */
+  font-family: 'Jura', sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.page-header-content p {
+  font-size: 1.2rem; /* Adjusted font size */
+  margin-bottom: 0; /* Removed extra spacing */
+}
+
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 1;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height:120px;
+}
+
+.title-campanhas {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.borel-regular {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style:normal;
+}
+
+.sub-title-campanhas {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 30px auto;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  transition: box-shadow 0.3s ease;
+  height: 350px;
+}
+
+.card-horizontal:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  flex: 0 0 60%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-image:hover img {
+  transform: scale(1.15);
+}
+
+.card-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: bold;
+}
+
+.card-content .card-date,
+.card-content .card-duration,
+.card-content .card-price {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-content .card-price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  align-self: center; /* Center the button horizontally */
+}
+
+.card-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-horizontal {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    clip-path: none;
+    height: 200px;
+  }
+
+  .card-image img {
+    height: 100%;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px;
+}
+
+.favorite-button {
+  color: red;
+  background: pink ;
+}
+
+.favorite-button:hover {
+  background: linear-gradient(135deg, #fd99a2, #fd99a2);
+}
+
+.rodape{
+  background-color: #f2fbfb;
+ 
+}
+#logo2{
+  width: 100px;
+}
+.copy{
+  color: #180F4A;
+  font-family: "Jura", sans-serif;
+  font-size: 15px;
+}
+.icone{
+  text-decoration: none;
+  font-size: 37px;
+  padding-left: 1%;
+  color: #180F4A;
+}
