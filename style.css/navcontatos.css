@@ -6,25 +6,32 @@
     
   }
   .navbar-nav .nav-link {
-      font-size: 32px;
+      font-size: 30px;
       color:#180F4A;
       
       
     }
     #destino{
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-top: 30px;
         color:#180F4A;
         
     }
+    #destino::after {
+        display: none !important;
+      }
   .row5{
-      margin-top: 120px;
-      margin-left: 300px !important;
+      
+      margin-top: 70px;
       margin-bottom: 3px;
       line-height: 100%;
       letter-spacing: 0%;
       z-index: 3;
       
+  }
+  .campanha{
+    margin-top: 30px;
+    margin-left: -12px !important;
   }
   #logo{
     width: 150px;
@@ -34,7 +41,19 @@
     top: 2%;
     z-index: 70;
   }
+  #language{
+    height: 22px;
+    background-color: transparent !important;
+    border: none !important;
+
+
+  }
+  #lingua{
+    margin-left: 370px;
+    position: absolute;
+    z-index: 100;
+  }
   #home{
     height: 30px;
-    margin-bottom: px;
+    margin-top: 31px;
   }

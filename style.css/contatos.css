@@ -1,6 +1,6 @@
 
 .coluna{
-    margin-top: 200px !important;
+    padding-top: 150px;
     background-color:  rgba(190, 222, 218, 1);
     padding-bottom: 30px !important;
     
@@ -9,7 +9,7 @@
     width: 100%;
     height: 530px;
     margin-left: 50px;
-    margin-top: -50px;
+    margin-top: 80px !important;
     
 }
 #mundo{
