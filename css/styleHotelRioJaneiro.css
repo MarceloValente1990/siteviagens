@@ -170,8 +170,8 @@ body {
 }
 
 
-/* Activity icons */
-.activity-icons {
+ /* Activity icons  */
+    .activity-icons {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap; /* Evita quebra de linha */
@@ -238,26 +238,65 @@ body {
     color: #555;
 }
 
+/* Icons hotel */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .progress-chart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+
+  .progress-chart svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+  }
+
+  .progress-bg {
+    stroke: #e6e6e6;
+  }
+
+  .progress-bar {
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease;
+  }
+
+  .progress-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .progress-content img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .percentage {
+    font-weight: bold;
+  }
+
+  .green { stroke: #7AC143; }
+  .blue { stroke: #00AEEF; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* cards hotel */
-
+/* Cards Hotel */
 
 
 /* Responsive */
@@ -284,4 +323,52 @@ body {
         margin-top: 15px;
         align-self: flex-end;
     }
-}
+} 
+  
+
+
+  /* Container para todos os círculos */
+  .activity-icons {
+    display: flex;             /* Coloca os itens lado a lado */
+    justify-content: space-between;  /* Espaça igualmente */
+  }
+  
+  /* Cada círculo e texto */
+  .activity-item {
+    text-align: center;        /* Centraliza o conteúdo */
+    margin: 10px;              /* Adiciona espaço entre os itens */
+  }
+  
+  /* O nome da atividade */
+  .activity-name {
+    margin-top: 10px;          /* Espaço acima do nome */
+    font-weight: bold;         /* Deixa o texto em negrito */
+  }
+  
+  /* A porcentagem */
+  .percentage {
+    color: green;              /* Cor do texto da porcentagem */
+    font-weight: bold;         /* Deixa o texto em negrito */
+    position: absolute;        /* Posiciona no centro do círculo */
+    top: 50%;                  /* Posiciona verticalmente */
+    left: 0;                   /* Alinha à esquerda do container */
+    width: 100%;               /* Usa toda a largura disponível */
+    transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
+  }
+  
+  /* Container do círculo SVG */
+  .circle-container {
+    position: relative;        /* Para posicionar coisas dentro dele */
+    width: 80px;               /* Largura do círculo */
+    height: 80px;              /* Altura do círculo */
+  }
+  
+  /* O ícone no centro */
+  .circle-icon {
+    position: absolute;        /* Posiciona no centro do círculo */
+    top: 30%;                  /* Posiciona verticalmente */
+    left: 50%;                 /* Posiciona horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    width: 24px;               /* Largura do ícone */
+    height: 24px;              /* Altura do ícone */
+  }

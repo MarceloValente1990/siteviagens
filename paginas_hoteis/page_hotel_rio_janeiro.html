@@ -62,6 +62,7 @@
             </div>
             <div class="price-section">
                 <div class="price">€1,750</div>
+        
 
                 <!-- Icons Atividades-->
         
@@ -107,54 +108,98 @@
                     </div>
                 </div>
             </div>
+
+  <!-- Nature and Adventure -->
+  <div class="progress-chart">
+    <svg>
+      <circle class="progress-bg" cx="60" cy="60" r="50" stroke-width="10" fill="none"/>
+      <circle class="progress-bar green" cx="60" cy="60" r="50" stroke-width="10" fill="none"
+        stroke-dasharray="314"
+        stroke-dashoffset="62" />
+    </svg>
+    <div class="progress-content">
+      <img src="https://img.icons8.com/ios-filled/50/forest.png" alt="Natureza">
+      <div class="label">Natureza e Aventura</div>
+      <div class="percentage" style="color:#7AC143">10%</div>
+    </div>
+
+    
+  <!-- Relax -->
+  <div class="progress-chart">
+    <svg>
+      <circle class="progress-bg" cx="60" cy="60" r="50" stroke-width="10" fill="none"/>
+      <circle class="progress-bar blue" cx="60" cy="60" r="50" stroke-width="10" fill="none"
+        stroke-dasharray="314"
+        stroke-dashoffset="282.6" />
+    </svg>
+    <div class="progress-content">
+      <img src="https://img.icons8.com/ios-filled/50/flip-flops.png" alt="Relaxar">
+      <div class="label">Relaxar</div>
+      <div class="percentage" style="color:#00AEEF">80%</div>
+    </div>
+  </div>
+
+  <!-- Monumentos -->
+  <div class="progress-chart">
+    <svg>
+      <circle class="progress-bg" cx="60" cy="60" r="50" stroke-width="10" fill="none"/>
+      <circle class="progress-bar blue" cx="60" cy="60" r="50" stroke-width="10" fill="none"
+        stroke-dasharray="314"
+        stroke-dashoffset="282.6" />
+    </svg>
+    <div class="progress-content">
+      <img src="https://img.icons8.com/ios-filled/50/flip-flops.png" alt="monumentos">
+      <div class="label">Monumentos História</div>
+      <div class="percentage" style="color:#00AEEF">70%</div>
+    </div>
+  </div>
+
+
+  <!-- Cidade -->
+  <div class="progress-chart">
+    <svg>
+      <circle class="progress-bg" cx="60" cy="60" r="50" stroke-width="10" fill="none"/>
+      <circle class="progress-bar blue" cx="60" cy="60" r="50" stroke-width="10" fill="none"
+        stroke-dasharray="314"
+        stroke-dashoffset="282.6" />
+    </svg>
+    <div class="progress-content">
+      <img src="https://img.icons8.com/ios-filled/50/flip-flops.png" alt="cidade">
+      <div class="label">Cidade e Cultura</div>
+      <div class="percentage" style="color:#00AEEF">90%</div>
+    </div>
+  </div>
+
+    <!-- diversão -->
+    <div class="progress-chart">
+        <svg>
+          <circle class="progress-bg" cx="60" cy="60" r="50" stroke-width="10" fill="none"/>
+          <circle class="progress-bar blue" cx="60" cy="60" r="50" stroke-width="10" fill="none"
+            stroke-dasharray="314"
+            stroke-dashoffset="282.6" />
+        </svg>
+        <div class="progress-content">
+          <img src="https://img.icons8.com/ios-filled/50/flip-flops.png" alt="diversao">
+          <div class="label">Diversão Noturna</div>
+          <div class="percentage" style="color:#00AEEF">90%</div>
+        </div>
+      </div>
+
+
+  </div>
+
+
         </div>
 
-        
-   
+
 
         <!-- Cards Hotel -->
-    
-
-    <script>
-        // Carousel functionality
-        const carousel = document.querySelector('.carousel');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
         
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        
-        // Next button click
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-        });
-        
-        // Previous button click
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateCarousel();
-        });
-        
-        // Update carousel position
-        function updateCarousel() {
-            carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
-        }
-        
-        // Auto slide (optional)
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-        }, 5000);
 
 
-// Componente para um único círculo de progresso
-const CircularProgress = ({ percentage, color, icon, title }) => {
-  const radius = 46;
-  const circumference = 2 * Math.PI * radius;
-  const strokeDashoffset = circumference * (1 - percentage / 100);
 
+
+       
     </script>
 </body>
 </html>
