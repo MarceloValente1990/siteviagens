@@ -8,22 +8,33 @@
   .navbar-nav .nav-link {
       font-size: 32px;
       color:#180F4A;
-      font-family: "Rampart One", sans-serif; 
+      
       
     }
+    #destino{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color:#180F4A;
+        
+    }
   .row5{
-      margin-top: 3px;
-      margin-left: 50px;
+      margin-top: 120px;
+      margin-left: 300px !important;
       margin-bottom: 3px;
       line-height: 100%;
       letter-spacing: 0%;
-      z-index: 3;   
+      z-index: 3;
+      
   }
   #logo{
-    width: 90px;
+    width: 150px;
     position: absolute;
     display: flex;
-    left: 1%;
+    left: 45%;
     top: 2%;
     z-index: 70;
+  }
+  #home{
+    height: 30px;
+    margin-bottom: px;
   }
