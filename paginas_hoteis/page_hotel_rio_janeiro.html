@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro</title>
+
+     <!-- Link CSS -->
+     <link rel="stylesheet" href="/css/styleHotelRioJaneiro.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h1>Rio de Janeiro</h1>
+
+                <!-- Logo Trustpilot -->
+
+                <div class="trustpilot-rating">
+                    <div class="trustpilot-logo">
+                      <span class="trustpilot-text">Trustpilot</span>
+                    </div>
+                    <div class="stars">
+                      <div class="star"></div>
+                      <div class="star"></div>
+                      <div class="star"></div>
+                      <div class="star"></div>
+                      <div class="star"></div>
+                    </div>
+                    <div class="score">4.8</div>
+                    <div class="reviews">10 Reviews</div>
+                  </div>
+
+            </div>
+                <a href="#" class="btn">Ser contactado</a>
+           </div>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide" style="background-image: url('/imagem/riodejaneiro.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('/imagem/riodejaneiro2.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('/imagem/riodejaneiro3.jpeg');"></div>
+                <div class="carousel-slide" style="background-image: url('/imagem/riodejaneiro4.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('/imagem/riodejaneiro5.jpg');"></div>
+            </div>
+           
+            <div class="carousel-nav">
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </div>
+        
+        <div class="departure-section">
+            <div class="first-departure">
+                <div class="checkbox"></div>
+                <div class="departure-date">Partida de Lisboa: Sab, 15 Nov 2025</div>
+            </div>
+            <div class="price-section">
+                <div class="price">€1,750</div>
+
+                <!-- Icons Atividades-->
+        
+                <div class="activity-icons">
+                    <div class="activity-icon">
+                        <div class="icon-circle nature">
+                            <img src="/imagem/nature.svg" alt="Nature icon">
+                        </div>
+                        <div class="activity-name">Natureza e Aventura</div>
+                        <div class="activity-percentage">80%</div>
+                    </div>
+                    
+                    <div class="activity-icon">
+                        <div class="icon-circle relax">
+                            <img src="/imagem/relax.svg" alt="Relax icon">
+                        </div>
+                        <div class="activity-name">Relaxar</div>
+                        <div class="activity-percentage">50%</div>
+                    </div>
+                    
+                    <div class="activity-icon">
+                        <div class="icon-circle monuments">
+                            <img src="/imagem/history.svg" alt="Monuments icon">
+                        </div>
+                        <div class="activity-name">Monumentos e História</div>
+                        <div class="activity-percentage">60%</div>
+                    </div>
+                    
+                    <div class="activity-icon">
+                        <div class="icon-circle city">
+                            <img src="/imagem/culture.svg" alt="City icon">
+                        </div>
+                        <div class="activity-name">Cidade e Cultura</div>
+                        <div class="activity-percentage">60%</div>
+                    </div>
+                    
+                    <div class="activity-icon">
+                        <div class="icon-circle party">
+                            <img src="/imagem/party.svg" alt="Party icon">
+                        </div>
+                        <div class="activity-name">Diversão noturna</div>
+                        <div class="activity-percentage">30%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+   
+
+        <!-- Cards Hotel -->
+    
+
+    <script>
+        // Carousel functionality
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        
+        // Next button click
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+        
+        // Previous button click
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+        
+        // Update carousel position
+        function updateCarousel() {
+            carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+        }
+        
+        // Auto slide (optional)
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        }, 5000);
+
+
+// Componente para um único círculo de progresso
+const CircularProgress = ({ percentage, color, icon, title }) => {
+  const radius = 46;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference * (1 - percentage / 100);
+
+    </script>
+</body>
+</html>
