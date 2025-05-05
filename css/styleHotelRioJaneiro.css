@@ -1,30 +1,43 @@
-* {
+
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'monserrat', sans-serif;
 }
 
 body {
+
+   display: flex;
     background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
+.container {
+  padding-top: 180px;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.header-left h1 {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.header-left h1{
     font-size: 60px;
     font-weight: 700;
     color: #180F4A;
@@ -73,6 +86,46 @@ body {
     font-size: 20px;
   }
 
+  .card-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px; /* opcional, afasta da borda */
+  }
+
+
+  .card-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #180F4A);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto; /* ou defina um valor fixo se preferir */
+    min-width: 150px; /* opcional */
+  }
+
+  .card-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+  }
+   
+  .card-button:hover {
+    background: linear-gradient(135deg, #003f7f);
+    transform: translateY(-3px);
+  }
+
+    /*
+
 .btn {
     background: #180F4A;;
     border: 1px solid #ddd;
@@ -87,16 +140,20 @@ body {
     color: white;
     text-decoration-line: none;
     margin-top: 100px;
+
 }
+
+  */
 
 /* Carousel styling */
 .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: -60px;
 }
 
 .carousel {
@@ -109,8 +166,10 @@ body {
 .carousel-slide {
     min-width: 100%;
     height: 100%;
+    background-size: contain; 
     background-size: cover;
     background-position: center;
+    background-color: #f0f0f0;
 }
 
 .carousel-nav {
@@ -123,22 +182,16 @@ body {
     transform: translateY(-50%);
 }
 
-.carousel-button {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
-
-.carousel-button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+.carousel-slide {
+  min-width: 100%;
+  height: 600px; 
+  background-size: cover;
+  background-position: center;
 }
 
 /* Departure section */
@@ -169,206 +222,252 @@ body {
     margin-right: 15px;
 }
 
-
- /* Activity icons  */
-    .activity-icons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Evita quebra de linha */
-    margin-top: 20px; /* Espaço após o .price */
+.hotel-nome h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: #180F4A;
+  margin-bottom: 8px;
+  font-family: 'dancing script', sans-serif;
+  text-align: center;
 }
 
-.activity-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 19%;
-    text-align: center;
+.gallery-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.icon-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 800px;
 }
 
-.nature {
-    background-color: rgba(141, 198, 63, 0.15);
-    border: 2px solid rgba(141, 198, 63, 0.8);
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 400px;
 }
 
-.relax {
-    background-color: rgba(91, 192, 222, 0.15);
-    border: 2px solid rgba(91, 192, 222, 0.8);
+.gallery-item {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.monuments {
-    background-color: rgba(252, 186, 3, 0.15);
-    border: 2px solid rgba(252, 186, 3, 0.8);
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.city {
-    background-color: rgba(241, 142, 28, 0.15);
-    border: 2px solid rgba(241, 142, 28, 0.8);
+.gallery-item:hover img {
+  transform: scale(1.05);
 }
 
-.party {
-    background-color: rgba(155, 107, 204, 0.15);
-    border: 2px solid rgba(155, 107, 204, 0.8);
+.item-large {
+  height: 400px;
 }
 
-.activity-icon img {
-    width: 30px;
-    height: 30px;
+.item-medium {
+  height: 300px;
 }
 
-.activity-name {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 5px;
+
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: 50px;
 }
 
-.activity-percentage {
-    font-size: 20px;
-    font-weight: 600;
-    color: #555;
+.title-line {
+  height: 1px;
+  background-color: #999;
+  flex-grow: 1;
 }
 
-/* Icons hotel */
+.title-content {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #555;
+  white-space: nowrap;
+}
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    gap: 40px;
-    padding: 40px;
+.title-icon {
+  margin-right: 10px;
+  color: #666;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+
+}
+
+.service-column {
+  flex: 0 0 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e67e22;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #e67e22;
+  font-size: 20px;
+}
+
+.service-name {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .service-column {
+      flex: 0 0 100%;
   }
+}
 
-  .progress-chart {
-    position: relative;
-    width: 120px;
-    height: 120px;
-  }
-
-  .progress-chart svg {
-    transform: rotate(-90deg);
-    width: 100%;
-    height: 100%;
-  }
-
-  .progress-bg {
-    stroke: #e6e6e6;
-  }
-
-  .progress-bar {
-    stroke-linecap: round;
-    transition: stroke-dashoffset 1s ease;
-  }
-
-  .progress-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .progress-content img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 6px;
-  }
-
-  .label {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 4px;
-  }
-
-  .percentage {
-    font-weight: bold;
-  }
-
-  .green { stroke: #7AC143; }
-  .blue { stroke: #00AEEF; }
-
-
-/* Cards Hotel */
 
 
 /* Responsive */
+@media (max-width: 992px) {
+  .header {
+      flex-direction: column;
+  }
+  
+  .carousel-container {
+      height: 350px;
+  }
+}
+
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
-    
-    .carousel-container {
-        height: 300px;
-    }
-    
-    .activity-icon {
-        width: 30%;
-        margin-bottom: 20px;
-    }
-    
-    .departure-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .price-section {
-        margin-top: 15px;
-        align-self: flex-end;
-    }
-} 
+  .departure-section {
+      flex-direction: column;
+      align-items: flex-start;
+  }
   
+  .price-section {
+      margin-top: 15px;
+      align-self: flex-end;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+      flex-direction: column;
+  }
+  
+  .left-column, .right-column {
+      width: 100%;
+  }
+  
+  .item-large, .item-medium {
+      height: 250px;
+  }
+}
 
 
-  /* Container para todos os círculos */
-  .activity-icons {
-    display: flex;             /* Coloca os itens lado a lado */
-    justify-content: space-between;  /* Espaça igualmente */
-  }
-  
-  /* Cada círculo e texto */
-  .activity-item {
-    text-align: center;        /* Centraliza o conteúdo */
-    margin: 10px;              /* Adiciona espaço entre os itens */
-  }
-  
-  /* O nome da atividade */
-  .activity-name {
-    margin-top: 10px;          /* Espaço acima do nome */
-    font-weight: bold;         /* Deixa o texto em negrito */
-  }
-  
-  /* A porcentagem */
-  .percentage {
-    color: green;              /* Cor do texto da porcentagem */
-    font-weight: bold;         /* Deixa o texto em negrito */
-    position: absolute;        /* Posiciona no centro do círculo */
-    top: 50%;                  /* Posiciona verticalmente */
-    left: 0;                   /* Alinha à esquerda do container */
-    width: 100%;               /* Usa toda a largura disponível */
-    transform: translateY(-50%); /* Ajusta para centralizar perfeitamente */
-  }
-  
-  /* Container do círculo SVG */
-  .circle-container {
-    position: relative;        /* Para posicionar coisas dentro dele */
-    width: 80px;               /* Largura do círculo */
-    height: 80px;              /* Altura do círculo */
-  }
-  
-  /* O ícone no centro */
-  .circle-icon {
-    position: absolute;        /* Posiciona no centro do círculo */
-    top: 30%;                  /* Posiciona verticalmente */
-    left: 50%;                 /* Posiciona horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
-    width: 24px;               /* Largura do ícone */
-    height: 24px;              /* Altura do ícone */
-  }
+.container-column {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  min-height: 600px;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checklist {
+  list-style-type: none;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.checklist label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checklist input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.accordion-button {
+  color: #0078a8;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0078a8;
+  background-color: rgba(0, 120, 168, 0.05);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 120, 168, 0.1);
+}
+
+.accordion-flush .accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+}

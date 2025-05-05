@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro - TripUP</title>
+
+    <!-- Link Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+
+    <!-- link icones -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Estilos do Navbar */
+        .nav1 {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav1.shrink {
+            padding: 5px 0;
+        }
+        
+        #logo {
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        #logo.hidden {
+            height: 40px;
+        }
+        
+        #home {
+            height: 25px;
+        }
+        
+        #language {
+            height: 20px;
+            width: auto;
+        }
+        
+        .nav-link a {
+            color: #444;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link a:hover {
+            color: #00a0e0;
+        }
+        
+        .dropdown-menu {
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: none;
+        }
+        
+        /* Estilos do Header */
+        .header {
+            padding: 120px 0 40px;
+            background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('/imagem/riodejaneiro.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* Trustpilot Rating */
+        .trustpilot-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        
+        .trustpilot-logo {
+            color: #00b67a;
+            font-weight: bold;
+        }
+        
+        .stars {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .star {
+            width: 18px;
+            height: 18px;
+            background-color: #00b67a;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        
+        .score {
+            font-weight: bold;
+        }
+        
+        .reviews {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+        
+        /* Botões */
+        .card-buttons {
+            margin: 25px 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card-button {
+            background-color: #00a0e0;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,160,224,0.3);
+        }
+        
+        .card-button:hover {
+            background-color: #0088c3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,160,224,0.4);
+        }
+        
+        /* Seção de Partida e Preços */
+        .departure-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .departure-date {
+            font-size: 1.1rem;
+            color: #444;
+        }
+        
+        .price-section {
+            text-align: right;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #00a0e0;
+        }
+        
+        /* Carrossel */
+        .carousel-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 500px;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Hotel Nome */
+        .hotel-nome {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .hotel-nome h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hotel-nome h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #00a0e0;
+        }
+        
+        /* Galeria */
+        .gallery-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        
+        .item-large {
+            height: 350px;
+        }
+        
+        .item-medium {
+            height: 200px;
+        }
+        
+        /* Título dos Serviços */
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin: 40px 0 30px;
+        }
+        
+        .title-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+        
+        .title-content {
+            padding: 0 20px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #555;
+            letter-spacing: 1px;
+        }
+        
+        /* Serviços */
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .service-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            background-color: #eef4f7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-icon img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .service-name {
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        .rodape {
+            background-color: #333;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        #logo2 {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .icone {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .icone:hover {
+            color: #00a0e0;
+        }
+        
+        .copy {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .gallery-container {
+                flex-direction: column;
+            }
+            
+            .carousel-slide {
+                height: 300px;
+            }
+            
+            .departure-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .price-section {
+                text-align: center;
+            }
+            
+            .service-column {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container-fluid nav1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6 col-md-4">
+                <a href="index.html">
+                    <img src="imagens/Logo_TripUP_Transparent.png" class="img-fluid" alt="TripUP Logo" id="logo">
+                </a>
+            </div>
+            <div class="col-6 col-md-8">
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-lg-none" href="index.html">
+                            <img src="imagens/home.png" alt="Home" id="home">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="index.html">
+                                        <img src="imagens/home.png" alt="Home" id="home">
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Destinos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Europa</a></li>
+                                        <li><a class="dropdown-item" href="#">América</a></li>
+                                        <li><a class="dropdown-item" href="#">Ásia</a></li>
+                                        <li><a class="dropdown-item" href="#">África</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Campanhas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#explora1">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#celular2">Contactos</a>
+                                </li>
+                            </ul>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="imagens/flagportugal.png" alt="Português" id="language">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="imagens/flagengland.png" alt="English" id="language">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="imagens/flagspain.png" alt="Español" id="language">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <div class="container">
+        <h1>Rio de Janeiro</h1>
+        
+        <!-- Trustpilot Rating -->
+        <div class="trustpilot-rating">
+            <div class="trustpilot-logo">Trustpilot</div>
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <div class="score">4.8</div>
+            <div class="reviews">245 Reviews</div>
+        </div>
+        
+        <div class="card-buttons">
+            <button class="card-button">Ser contactado</button>
+        </div>
+    </div>
+</div>
+
+<!-- Partida e Preço -->
+<div class="container">
+    <div class="departure-section">
+        <div class="departure-date">Partida de Lisboa: Sab, 15 Nov 2025</div>
+        <div class="price-section">
+            <div class="price">€1,750 por pessoa</div>
+        </div>
+    </div>
+</div>
+
+<!-- Carrossel -->
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-slide" style="background-image: url('https://source.unsplash.com/1200x600/?rio-de-janeiro,brazil');"></div>
+        <div class="carousel-slide" style="background-image: url('https://source.unsplash.com/1200x600/?copacabana,beach');"></div>
+        <div class="carousel-slide" style="background-image: url('https://source.unsplash.com/1200x600/?christ-the-redeemer');"></div>
+        <div class="carousel-slide" style="background-image: url('https://source.unsplash.com/1200x600/?sugarloaf-mountain');"></div>
+        <div class="carousel-slide" style="background-image: url('https://source.unsplash.com/1200x600/?ipanema-beach');"></div>
+    </div>
+</div>
+
+<!-- Nome do Hotel -->
+<div class="container">
+    <div class="hotel-nome">
+        <h2>The Carioca Bay Resort</h2>
+    </div>
+</div>
+
+<!-- Galeria -->
+<div class="container">
+    <div class="gallery-container">
+        <div class="left-column">
+            <div class="gallery-item item-large">
+                <img src="https://source.unsplash.com/800x600/?hotel-room" alt="Quarto de hotel">
+            </div>
+            <div class="gallery-item item-medium">
+                <img src="https://source.unsplash.com/800x600/?hotel-lobby" alt="Lobby do hotel">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="gallery-item item-medium">
+                <img src="https://source.unsplash.com/800x600/?hotel-pool" alt="Piscina do hotel">
+            </div>
+            <div class="gallery-item item-large">
+                <img src="https://source.unsplash.com/800x600/?hotel-restaurant" alt="Restaurante do hotel">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Serviços do Hotel -->
+<div class="container">
+    <div class="title-container">
+        <div class="title-line"></div>
+        <div class="title-content">
+            <i class="fas fa-building"></i>
+            SERVIÇOS DO HOTEL
+        </div>
+        <div class="title-line"></div>
+    </div>
+    
+    <div class="services-container">
+        <div class="service-column">
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-parking fa-2x"></i>
+                </div>
+                <div class="service-name">Estacionamento</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-elevator fa-2x"></i>
+                </div>
+                <div class="service-name">Elevador</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-dumbbell fa-2x"></i>
+                </div>
+                <div class="service-name">Ginásio</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-swimming-pool fa-2x"></i>
+                </div>
+                <div class="service-name">Piscina interior</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-utensils fa-2x"></i>
+                </div>
+                <div class="service-name">Restaurante</div>
+            </div>
+        </div>
+        
+        <div class="service-column">
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-tshirt fa-2x"></i>
+                </div>
+                <div class="service-name">Serviço de lavandaria</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-wifi fa-2x"></i>
+                </div>
+                <div class="service-name">Wi-Fi</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-coffee fa-2x"></i>
+                </div>
+                <div class="service-name">Cafeteira / Chaleira</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-wind fa-2x"></i>
+                </div>
+                <div class="service-name">Secador</div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-tv fa-2x"></i>
+                </div>
+                <div class="service-name">Televisão</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Accordion (Comentado) -->
+<!-- <div class="container">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Inclui
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Passagem aérea em classe turística para os percursos escolhidos;</li>
+                        <li>Bagagem de porão quando reservados voos especiais / charter;</li>
+                        <li>Apenas bagagem de mão quando reservados voos regulares;</li>
+                        <li>Transporte Aeroporto / Hotel / Aeroporto;</li>
+                        <li>Estadia no hotel e regime escolhido durante o período selecionado;</li>
+                        <li>Taxas de aeroporto, segurança e combustível;</li>
+                        <li>Seguro de viagem desde o aeroporto de origem.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Exclui
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Extras de carácter pessoal;</li>
+                        <li>Tudo o que não estiver devidamente especificado como incluído no programa;</li>
+                        <li>Despesas de Reserva por processo;</li>
+                        <li>Taxas locais e outras que não estejam mencionadas nos serviços incluídos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Notas e Condições
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Informações importantes:</p>
+                    <p>Os programas para destinos de neve não incluem material de ski, exceto quando devidamente mencionado nas inclusões.</p>
+                    <p>Todos os preços estão sujeitos a alteração sem aviso prévio devido a flutuações cambiais ou disponibilidade de lugares.</p>
+                    <p>É necessário passaporte com validade mínima de 6 meses após a data de regresso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Google Maps (Comentado) -->
+<!-- <div class="container mb-5">
+    <div class="map-container">
+        <iframe 
+            width="100%" 
+            height="400" 
+            frameborder="0" 
+            style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5359549784766!2d-43.18152902386716!3d-22.967311079212504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace!5e0!3m2!1spt-PT!2spt!4v1746444286710!5m2!1spt-PT!2spt" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div> -->
+
+<!-- Footer -->
+<footer class="container-fluid text-center rodape">
+    <div class="living">
+        <p><img src="imagens/Logo_TripUP_Transparent.png" alt="TripUP Logo" id="logo2"></p>
+    </div>
+    <div>
+        <p>
+            <a href="#" class="icone"><i class="fi fi-brands-facebook"></i></a>
+            <a href="#" class="icone"><i class="fi fi-brands-instagram"></i></a>
+            <a href="#" class="icone"><i class="fi fi-brands-twitter-alt-circle"></i></a>
+        </p>
+    </div>
+    <div class="copy">
+        <p>© Copyright 2025 TripUP® - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Carrossel
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.carousel-slide');
+    
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+    
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }, 3000);
+    
+    // Navbar Shrink
+    window.addEventListener('scroll', () => {
+        const logo = document.getElementById('logo');
+        const nav = document.querySelector('.nav1');
+        
+        if (window.scrollY > 50) {
+            logo.classList.add('hidden');
+            nav.classList.add('shrink');
+        } else {
+            logo.classList.remove('hidden');
+            nav.classList.remove('shrink');
+        }
+    });
+</script>
+
+</body>
+</html>
