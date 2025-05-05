@@ -79,8 +79,8 @@
 }
 
 .page-header-content h1 {
-  font-size: 2.5rem; /* Adjusted font size */
-  font-family: 'Jura', sans-serif;
+  font-size: 56px; /* Adjusted font size */
+  font-family: 'Dancing Script';
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
@@ -168,6 +168,7 @@
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
+  font-family: 'Arial';
 }
 
 .card-content h3 {
@@ -200,7 +201,7 @@
 
 .card-button {
   padding: 10px 20px;
-  background: linear-gradient(135deg, #007bff, #0056b3);
+  background: linear-gradient(135deg, #180F4A);
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -213,7 +214,7 @@
 }
 
 .card-button:hover {
-  background: linear-gradient(135deg, #0056b3, #003f7f);
+  background: linear-gradient(135deg, #003f7f);
   transform: translateY(-3px);
 }
 
@@ -241,6 +242,7 @@
 }
 
 .card-buttons {
+  
   display: flex;
   gap: 10px; /* Space between buttons */
   margin-top: 15px;
