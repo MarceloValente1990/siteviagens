@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'monserrat', sans-serif;
+    font-family:'arial';
 }
 
 body {
@@ -339,7 +339,7 @@ body {
 }
 
 .service-name {
-  font-size: 16px;
+  font-size: 25px;
   color: #666;
   font-weight: 400;
 }
