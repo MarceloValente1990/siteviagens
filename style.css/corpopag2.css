@@ -1,28 +1,50 @@
 .corpopag2{
     width: 100%;
 }
-.rowcorpo2{
-    padding: 3%;
-    background-color: rgba(190, 222, 218, 1);
+.textocorpo{ 
+    font-size: 40px;
+    color: #180F4A;
 }
-.textopag2{
+
+.textocorpo2{
     font-size: 20px;
-    z-index: 3;
-    margin-left: 75px;
-    line-height: 15px;
-    padding-top: 25px;   
+    color: #180F4A;
+}
+#textocorpo3{ 
+    padding: 2%;
+    font-size: 40px;
+    color: #180F4A;
 }
 .hindex{
-    font-family: "Rampart One", sans-serif;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding-top: -30px !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0))
+}
+.hindex2{
+    height: 130px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0))
+}
+.imagemcorpopag{
+    border-radius: 20px;
+    width: 100% !important;
+    height: 250px !important;
+    
+     
 }
 .imagemcorpopag2{
-    border-bottom-right-radius: 185px;
-    border-top-right-radius: 110px;
-    border-top-left-radius: 20px;
-    box-shadow: 40px 0px 10px 0px rgba(128, 128, 133, 0.3);
-    width: 243px;
-    height: 300px !important;
-    margin-right: 600px;  
+    border-radius: 20px;
+    width: 100% !important;
+    height: 510px !important;
+    
+     
 }
 #letra{
     font-size: 26px;
@@ -32,42 +54,80 @@
 }
 #info{
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-    font-size: 20px;
-    border: solid black;
+    color: #180F4A;
+    font-size: 15px;
+    border-bottom: solid rgb(241, 17, 17);
     text-align: center;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 30px 10px 30px;
     border-radius: 10px;  
+    position: absolute;
+    margin-left: 32%;
 }
+#info2{
+    text-decoration: none;
+    color: #180F4A;
+    font-size: 13px;
+    border-bottom: solid rgb(241, 17, 17);
+    text-align: center;
+    border-radius: 10px;  
+    position: absolute;
+    margin-left: 25%;
+    
+
+}
+
 .colcorpo2{
-   border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
-    width: 574px;
-    height: 400px;     
-}
-.colcorpo4{
-  border-radius: 20px;
-   background-color: rgba(217, 217, 217, 1);
+   position: relative;
+   border-radius: 10px;
+   background-color: rgb(237, 237, 234);
    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
-   width: 574px;
-   height: 400px; 
-   margin-top: -120px !important; 
+   color: #180F4A;
+   height: 510px;
+   margin-bottom: 1%;
+   margin-left: 3% !important;
+   
+      
+}
+
+.colcorpo4{
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 234);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+    color: #180F4A;
+    height: 250px; 
+    margin-left: 2%;
+    
 }
 .colcorpo3{
-    border-radius: 20px;
-    background-color: rgba(217, 217, 217, 1);
-    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
-    width: 574px;
-    height: 400px;
-    margin-top: 250px !important;
+    position: relative;
+   border-radius: 10px;
+   background-color: rgb(237, 237, 234);
+   box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+   color: #180F4A;
+   height: 250px;
+   
 }
 .colcorpo5{
-  border-radius: 20px;
-  background-color: rgba(217, 217, 217, 1);
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
-  width: 574px;
-  height: 400px;
-  margin-top: 120px !important;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 234);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+    color: #180F4A;
+    height: 250px;
+    margin-top: 2% !important;
+    margin-bottom: 6% !important;
+   
+    
+}
+.colcorpo6{
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 234);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+    color: #180F4A;
+    height: 250px;
+    margin-left: 2%;
+    margin-top: 2% !important;
 }
 

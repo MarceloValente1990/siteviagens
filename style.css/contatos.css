@@ -1,7 +1,7 @@
 
 .coluna{
     padding-top: 150px;
-    background-color:  rgba(190, 222, 218, 1);
+    background-color:rgb(237, 237, 234);
     padding-bottom: 30px !important;
     
 }
@@ -78,7 +78,7 @@
     font-family: "Rampart One", sans-serif; 
 }
 .rodape{
-    background-color: #858383;
+    background-color: #f2fbfb;
    
 }
 #logo2{
