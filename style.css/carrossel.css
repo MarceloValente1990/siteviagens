@@ -2,5 +2,31 @@
     margin-top: 190px;
     width: 100%;
     height: 492px;
-    object-fit: cover;
+    object-fit: fill;
   }
+.carrosselnome{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+#carrosselicone{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  
+  text-align: center;
+  border-radius: 20px;  
+  background-color: #180F4A;
+  padding: 8px 30px 8px 30px;
+  
+  transition: 0.3s;
+}
+#carrosselicone:hover{
+  background-color:#003f7f;
+  color: white;
+}
+#carrosselicone:active{
+  transform: translateY(3px);
+}

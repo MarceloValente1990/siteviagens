@@ -13,7 +13,7 @@
     
 }
 #mundo{
-    font-family: "Rampart One", sans-serif; 
+    font-family: "Dancing Script", sans-serif; 
     font-size: 50px;
     text-align: center;
     color: #180F4A;
@@ -21,6 +21,7 @@
 .pcont{
     text-align:justify; 
     font-size: 23px;
+    font-family: "Arial";
 }
 .iconemundo{
     height: 40px;
@@ -37,7 +38,7 @@
     border: solid;
     transition: 0.1s;
 }
-#infopag3:active{
+#infocontato:active{
     transform: translateY(3px);
 }
 .fundo {
@@ -51,15 +52,16 @@
     
   }
 .subscreva{
-    font-family: "Jura", sans-serif; 
+    font-family: "Arial", sans-serif; 
     font-weight: bolder;
     text-align:justify;
     font-size: 20px;
     box-sizing: border-box;
     backdrop-filter: brightness(40%);
-    background-color: rgba(255, 253, 253, 0.575);
+    background-color: rgba(255, 253, 253, 0.454);
     z-index: 1;
-    height: 450px;   
+    height: 450px;
+    color: #180F4A;  
     
     
 }
@@ -70,12 +72,15 @@
 .plane{
     height: 60px;
     margin-top: 70px;
+    
 }
 
 #dicas{
     border-bottom: solid rgb(20, 31, 180);
     padding-bottom: 10px; 
-    font-family: "Rampart One", sans-serif; 
+    font-family: "Dancing Script", sans-serif; 
+    font-size: 50px;
+    color: #180F4A;
 }
 .rodape{
     background-color: #f2fbfb;

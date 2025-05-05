@@ -10,11 +10,13 @@
     border-bottom: solid rgb(20, 31, 180);
     margin-bottom: 20px;
     padding-bottom: 10px; 
-    font-family: "Rampart One", sans-serif; 
+    font-family: "Dancing Script", sans-serif; 
+    color: #180F4A;
+    font-size: 55px;
 }
 #blog2{
     text-decoration: none;
-    color: black;
+    color: #180F4A;
     font-size: 20px;
     border: solid black;
     text-align: center;
@@ -22,8 +24,14 @@
     border-radius: 7px;
     background-color: transparent;
     margin-top: 15px;
-    
-
+    transition: 0.3s;
+}
+#blog2:hover{
+    background-color:#180F4A;
+    color: white;
+}
+#blog2:active{
+    transform: translateY(3px);
 }
 .rodape{
     background-color: #f2fbfb;

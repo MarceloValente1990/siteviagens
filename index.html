@@ -8,6 +8,7 @@
         <meta name="keywords" content="Viagens Destinos Férias">
         <!--link css-->
         <link rel="stylesheet" href="style.css/nav.css">
+        <link rel="stylesheet" href="style.css/aviao.css">
         <link rel="stylesheet" href="style.css/carrossel.css">
         <link rel="stylesheet" href="style.css/corpopag2.css">
         <link rel="stylesheet" href="style.css/porto.css">
@@ -26,7 +27,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <title>TripUP</title>
   </head>
   <body>
@@ -44,10 +47,10 @@
                         Destinos
                       </button>
                       <ul class="dropdown-menu dropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Europa</a></li>
+                        <li><a class="dropdown-item" href="#">Caribe</a></li>
+                        <li><a class="dropdown-item" href="#">Sudeste Asiático</a></li>
+                        <li><a class="dropdown-item" href="#">América do Sul</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -86,6 +89,12 @@
             </nav>
       </div>
   </div>
+  <!---aviao-->
+  <div class="airplane">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+      <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V18l-2 1v2l3-1 3 1v-2l-2-1v-4.5l8 2.5z"/>
+    </svg>
+</div>
 <!--carrossel-->
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -96,31 +105,31 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
-        <img src="imagens/curação.jpeg" class="d-block w-100 imagem" alt="...">
+        <img src="imagens/paris.jpg" class="d-block w-100 imagem" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h2 class="carrosselnome">DISNEYLANDIA PARIS</h2>
+          <p><a href="hippie.html" id="carrosselicone" class=" text-center ">Descubra</a></p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="imagens/ilhas phi phi.jpeg" class="d-block w-100 imagem" alt="...">
+        <img src="imagens/BCC-2024-EXPLORER-BANGKOK-FUN-THINGS-TO-DO-HEADER_MOBILE.avif" class="d-block w-100 imagem" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h2 class="carrosselnome">BANGKOK</h2>
+          <p><a href="hippie.html" id="carrosselicone" class=" text-center ">Descubra</a></p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="imagens/paris.jpeg" class="d-block w-100 imagem" alt="...">
+        <img src="imagens/Cuba_LaHabana_1.webp" class="d-block w-100 imagem" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h2 class="carrosselnome">HAVANA</h2>
+          <p><a href="hippie.html" id="carrosselicone" class=" text-center ">Descubra</a></p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="imagens/machu picchu.jpeg" class="d-block w-100 imagem" alt="...">
+        <img src="imagens/rio2.webp" class="d-block w-100 imagem" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h2 class="carrosselnome">RIO DE JANEIRO</h2>
+          <p><a href="hippie.html" id="carrosselicone" class=" text-center ">Descubra</a></p>
         </div>
       </div>
     </div>
@@ -134,16 +143,16 @@
     </button>
     </div>
 <!--destinos-->
-<p id="textocorpo3" class="text-center">Mais inspiração</p>
+<p id="textocorpo3" class="text-center">Mais Inspirações</p>
   <div class="container-fluid text-center corpopag2">
   <div class="row justify-content-evenly ">
       <div class=" row col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo2 rowcorpo2 p-0">
         <figure class="col-12 col-sm-6 col-md-12 d-flex flex-column p-0" >
-        <img src="imagens/machu picchu 2.jpeg" alt="oi" class="img-fluid imagemcorpopag2">
+        <img src="imagens/praia-tropical-com-areia-branca_1203-1710.avif" alt="oi" class="img-fluid imagemcorpopag2">
         
         </figure>
           <div class=" hindex col-12 col-sm-6 col-md-12 d-flex flex-column text-center justify-content-evenly ">
-          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo">Campanha</h1><br><br>
+          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo">FÉRIAS NA PRAIA</h1><br><br>
           <a href="hippie.html" id="info" class=" col-12 col-sm-6 col-md-4 d-flex flex-column text-center ">Descubra</a>
         </div>
         
@@ -151,44 +160,44 @@
       <div class="row col-12 col-md-6 col-sm-5 d-flex flex-wrap text-start coluna2 p-0" >
       <div class="col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo3 p-0">
         <figure class="col-12 col-sm-6 col-md-12 d-flex flex-column p-0" >
-        <img src="imagens/paris.jpeg" alt="oi" class="img-fluid imagemcorpopag">
+        <img src="imagens/amsterda.jpg" alt="oi" class="img-fluid imagemcorpopag">
         
         </figure>
           <div class=" hindex2 col-12 col-sm-6 col-md-12 d-flex flex-column text-center justify-content-evenly ">
-          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">Europa</h1><br><br>
+          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">EUROPA</h1><br><br>
           <a href="hippie.html" id="info2" class=" col-12 col-sm-6 col-md-6 d-flex flex-column text-center ">Descubra</a>
         </div>
         
       </div>
       <div class="col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo4 p-0">
         <figure class="col-12 col-sm-6 col-md-12 d-flex flex-column p-0" >
-        <img src="imagens/curação.jpeg" alt="oi" class="img-fluid imagemcorpopag">
+        <img src="imagens/curaçao.webp" alt="oi" class="img-fluid imagemcorpopag">
         
         </figure>
           <div class=" hindex2 col-12 col-sm-6 col-md-12 d-flex flex-column text-center justify-content-evenly ">
-          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">Caribe</h1><br><br>
+          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">CARIBE</h1><br><br>
           <a href="hippie.html" id="info2" class=" col-12 col-sm-6 col-md-6 d-flex flex-column text-center ">Descubra</a>
         </div>
         
       </div>
       <div class="col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo5 p-0">
         <figure class="col-12 col-sm-6 col-md-12 d-flex flex-column p-0" >
-        <img src="imagens/machu picchu.jpeg" alt="oi" class="img-fluid imagemcorpopag">
+        <img src="imagens/machupicchu-1138641_1280.jpg" alt="oi" class="img-fluid imagemcorpopag">
         
         </figure>
           <div class=" hindex2 col-12 col-sm-6 col-md-12 d-flex flex-column text-center justify-content-evenly ">
-          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">América do Sul</h1><br><br>
+          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">AMÉRICA DO SUL</h1><br><br>
           <a href="hippie.html" id="info2" class=" col-12 col-sm-6 col-md-6 d-flex flex-column text-center ">Descubra</a>
         </div>
         
       </div>
       <div class="col-12 col-sm-6 col-md-5 d-flex flex-column text-start colcorpo6 p-0">
         <figure class="col-12 col-sm-6 col-md-12 d-flex flex-column p-0" >
-        <img src="imagens/ilhas phi phi.jpeg" alt="oi" class="img-fluid imagemcorpopag">
+        <img src="imagens/phi-phi.webp" alt="oi" class="img-fluid imagemcorpopag">
         
         </figure>
           <div class=" hindex2 col-12 col-sm-6 col-md-12 d-flex flex-column text-center justify-content-evenly ">
-          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">Sudeste Asiático</h1><br><br>
+          <h1 class="col-12 col-sm-6 col-md-12 d-flex flex-column text-center textocorpo2">SUDESTE ASIÁTICO</h1><br><br>
           <a href="hippie.html" id="info2" class=" col-12 col-sm-6 col-md-6 d-flex flex-column text-center ">Descubra</a>
         </div>
         
@@ -211,7 +220,7 @@
     <div class="row justify-content-evenly">
         <div class=" row col-4 d-flex flex-column text-center p-0">
             <p><img src="imagens/plane.png" alt="" class="plane"></p>
-            <h1 id="dicas">DICAS DE VIAGEM</h1>
+            <h1 id="dicas">Dicas de Viagens</h1>
         </div>
         <div>
             <p class="row col-12 d-flex flex-column text-center">Leia todas as nossas dicas práticas e realize as suas viagens de sonho sem rebentar o orçamento.</p>
@@ -251,6 +260,7 @@
   }
 });
 </script>
+<script src="script.js/aviao.js"></script>
 </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-...hash..." crossorigin="anonymous"></script>
   </body>

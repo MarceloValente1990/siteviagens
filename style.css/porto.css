@@ -13,12 +13,23 @@
     padding: 10px;
     border-radius: 7px;
     color: white;
-    margin-top: 230px;
+    margin-top: 210px;
     margin-left: 940px;
+    font-family: "Arial";
+    transition: 0.3s;
+}
+#porto2:hover{
+    background-color:#180F4A;
+    color: white;
+    border:black;
+}
+#porto2:active{
+    transform: translateY(3px);
 }
 .textoporto{
     margin-top: 25px !important;
     margin-left: 30px;
     color: white;
-    font-family: "Rampart One", sans-serif;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 60px;
 }

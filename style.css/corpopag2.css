@@ -12,8 +12,9 @@
 }
 #textocorpo3{ 
     padding: 2%;
-    font-size: 40px;
+    font-size: 70px;
     color: #180F4A;
+    font-family: "Dancing Script", sans-serif;
 }
 .hindex{
     height: 200px;
@@ -62,18 +63,32 @@
     border-radius: 10px;  
     position: absolute;
     margin-left: 32%;
+    transition: 0.3s;
+}
+#info:hover{
+    background-color:#180F4A;
+    color: white;
+}
+#info:active{
+    transform: translateY(3px);
 }
 #info2{
     text-decoration: none;
     color: #180F4A;
     font-size: 13px;
-    border-bottom: solid rgb(241, 17, 17);
+    border-bottom: solid red;
     text-align: center;
     border-radius: 10px;  
     position: absolute;
     margin-left: 25%;
-    
-
+    transition: 0.3s;
+}
+#info2:hover{
+    background-color:#180F4A;
+    color: white;
+}
+#info2:active{
+    transform: translateY(3px);
 }
 
 .colcorpo2{
