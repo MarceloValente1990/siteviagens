@@ -259,6 +259,11 @@ h3 {
   position: absolute;
 }
 
+#logo2{
+  width: 200px;
+  height: 170px;
+}
+
 .copy {
   color: #180F4A;
   font-family: "Jura", sans-serif;
