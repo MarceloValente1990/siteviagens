@@ -1,0 +1,15 @@
+.airplane {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    font-size: 2rem;
+    color: #180f4a;
+    z-index: 1000;
+    transform: rotate(180deg);
+    transition: top 0.1s ease, transform 0.8s ease;
+    cursor: pointer;
+  }
+  .airplane:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+  }

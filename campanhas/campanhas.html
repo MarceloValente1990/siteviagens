@@ -38,61 +38,82 @@
 
     <!-- link icones -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- link icones -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <title>TripUP</title>
     
   </head>
   <body>
 
-    <!-- nav  -->
-    <div class="container-fluid nav1">
+     <!-- nav  -->
+     <div class="container-fluid nav1">
       <div class="row">
-        <p>
-          <a href="index.html"
-            ><img
-              src="imagens/Logo_TripUP_Transparent.png"
-              class="img-fluid"
-              alt=""
-              id="logo"
-          /></a>
-        </p>
-        <nav class="navbar navbar-expand-lg bg-transparent">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarNav"
-            >
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link row5" href="">Destinos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link row5" href="#explora1">Campanhas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link row5" href="#celular2">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link row5" href="contatos.html">Contatos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+          <P><a href="#"><img src="imagens/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a></P>
+          <nav class="navbar navbar-expand-lg bg-transparent">
+              <div class="container-fluid nav-link row5 col-12 col-md-6 col-sm-5">
+               
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown nav-link">
+                      <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
+                        Destinos
+                      </button>
+                      <ul class="dropdown-menu dropdown">
+                        <li><a class="dropdown-item" href="#">Europa</a></li>
+                        <li><a class="dropdown-item" href="#">Caribe</a></li>
+                        <li><a class="dropdown-item" href="#">Sudeste Asiático</a></li>
+                        <li><a class="dropdown-item" href="#">América do Sul</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="container-fluid nav-link col-12 col-md-4 col-sm-5 campanha">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Campanhas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contatos.html">Contactos</a>
+                  </li>
+              </div>
+              <div class="container-fluid nav-link col-12 col-md-4 col-sm-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="lingua" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown nav-link">
+                      <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="imagens/flagportugal.png" id="language" alt="">
+                      </button>
+                      <ul class="dropdown-menu dropdown w-auto" id="language">
+                        <li><a class="dropdown-item" href="indexeng.html" id="language"><img src="imagens/flagengland.png"  alt=""id="language" ></a><p></p></li>
+                        <li><a class="dropdown-item" href="indexes.html" id="language"><img src="imagens/flagspain.png" alt=""id="language"></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </nav>
       </div>
-    </div>
+  </div>
 
     <!---aviao-->
     <div class="airplane">
@@ -145,7 +166,7 @@
         <img src="Imagens/rio.jpg" alt="Travel Destination" />
       </div>
       <div class="card-content">
-        <h3>Rio de Janeiro </h3>
+        <h3>RIO DE JANEIRO</h3>
         <p>
           O destino perfeito para quem adora sol e paisagens de tirar o fôlego 🌴 <br>
           Voo (OPO) + Hotel
@@ -168,10 +189,10 @@
         <img src="Imagens/bagkok.jpg" alt="Travel Destination" />
       </div>
       <div class="card-content">
-        <h3>Bangkok</h3>
+        <h3>BANGKOK</h3>
         <p>
           Mergulhe na cultura tailandesa 🌆<br>
-          Voo + Hotel
+          Voo (OPO) + Hotel
         </p>
         <p class="card-date">Válido de: 07/Julho/2025 - 15/Julho/2025</p>
         <p class="card-duration"> 8 Dias / 7 Noites</p>
@@ -191,7 +212,7 @@
         <img src="Imagens/havana.jpg" alt="Travel Destination" />
       </div>
       <div class="card-content">
-        <h3>Havana </h3>
+        <h3>HAVANA</h3>
         <p>
           O destino perfeito para quem procura história, cultura e a magia dos carros clássicos 🏝️<br>
           Voo (OPO) + Hotel
@@ -208,23 +229,39 @@
       </div>
     </div>
 
-    <!-- footer -->
-  <footer class=" container-fluid text-center rodape">
+  <!-- Footer -->
+  <footer class="container-fluid text-center rodape">
     <div class="living">
-        <p><img src="imagens/Logo_TripUP_Transparent.png" alt="" id="logo2"></p>
+      <p><img src="imagens/TripUpLogo.png" alt="" id="logo2"></p>
     </div>
     <div>
-        <P>
-            <a href="" class="icone"><i class="fi-brands-facebook"></i></a>
-            <a href="" class="icone"><i class="fi-brands-instagram"></i></a>
-            <a href="" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
-        </P>
+      <p>
+        <a href="#" class="icone"><i class="fi-brands-facebook"></i></a>
+        <a href="#" class="icone"><i class="fi-brands-instagram"></i></a>
+        <a href="#" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
+      </p>
     </div>
     <div class="copy">
-        <p>© Copyright 2025 TripUP® - Todos os direitos reservados - </p>
+      <p>© Copyright 2025 TripUP® – Todos los derechos reservados –</p>
     </div>
   </footer>
 
   </body>
   <script src="airplane.js"></script>
+  <script>
+    
+    window.addEventListener('scroll', () => {
+    const logo = document.getElementById('logo');
+    const nav = document.querySelector('.nav1');
+
+    if (window.scrollY > 50) {
+      logo.classList.add('hidden');
+      nav.classList.add('shrink');
+    } else {
+      logo.classList.remove('hidden');
+      nav.classList.remove('shrink');
+    }
+  });
+</script>
+
 </html>
