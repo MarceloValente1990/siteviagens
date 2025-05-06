@@ -19,8 +19,8 @@ body {
     padding: 20px;
 }
 
-.container {
-  padding-top: 180px;
+.container1 {
+  padding-top: 80px;
   max-width: 100%;
   width: 100%;
   min-height: 100vh;
@@ -50,6 +50,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .trustpilot-rating {
@@ -57,6 +58,7 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     gap: 8px;
+    margin-bottom: 10px;
   }
   
   .trustpilot-logo {
@@ -121,6 +123,7 @@ body {
     gap: 10px; /* Space between buttons */
     margin-bottom: 15px;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
    
   .card-button:hover {
@@ -138,6 +141,7 @@ body {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .departure-date {
@@ -166,6 +170,7 @@ body {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .carousel {
@@ -201,21 +206,23 @@ body {
 }
 .carousel-slide {
   min-width: 100%;
-  height: 600px; 
+  height: 400px; 
   background-size: cover;
   background-position: center;
 }
 
 .hotel-nome {
   margin-top: 0;
+  padding-top: 0;
 }
 
 .hotel-nome h2{
-  margin-top: 5px;
-  font-size: 70px;
+  margin-top: 0;
+  font-size: 50px;
   font-weight: 700;
   color: #180F4A;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  line-height: 1;
   font-family: 'dancing script', sans-serif;
   text-align: center;
 }
@@ -233,7 +240,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 800px;
+  min-width: 300px;
 }
 
 .right-column {
@@ -241,7 +248,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .gallery-item {
@@ -309,7 +316,6 @@ body {
   gap: 20px;
   justify-content: flex-start;
   margin-bottom: 30px;
-
 }
 
 .service-column {
@@ -322,72 +328,61 @@ body {
 .service-item {
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 0;
 }
 
 .service-icon {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #e67e22;
+  margin-left: 150px;
+  width: 40px;
+  height: 40px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
-  color: #e67e22;
-  font-size: 20px;
 }
 
 .service-name {
-  font-size: 25px;
+  font-size: 18px;
   color: #666;
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  .service-column {
-      flex: 0 0 100%;
-  }
+.reviews-util {
+  font-family: 'Dancing Script';
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-
-
-
-/* Responsive */
-@media (max-width: 992px) {
-  .header {
-      flex-direction: column;
-  }
-  
-  .carousel-container {
-      height: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .departure-section {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  
-  .price-section {
-      margin-top: 15px;
-      align-self: flex-end;
-  }
+ 
+.card {
+  border: 2px solid #faf5f5;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 15px;
   
 }
-
-@media (max-width: 768px) {
-  .gallery-container {
-      flex-direction: column;
-  }
+.container2{
   
-  .left-column, .right-column {
-      width: 100%;
-  }
-  
-  .item-large, .item-medium {
-      height: 250px;
-  }
+  padding-bottom: 50px ;
+  padding-top: 50px;
+  color: #180F4A;
+}
+ 
+.user-content p {
+  margin-top: 2px;
+  font-size: 12px;
+}
+ 
+.rounded-circle {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+ 
+.ratings i {
+  color: #FFD700;
 }
 
 
@@ -459,4 +454,147 @@ h2 {
 
 .accordion-flush .accordion-item {
   border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container-column {
+      flex-direction: column;
+  }
+  
+  .left-column, .right-column {
+      min-width: 100%;
+  }
+  
+  .service-item {
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .header-left h1 {
+      font-size: 50px;
+  }
+  
+  .carousel-container {
+      height: 300px;
+  }
+  
+  .hotel-nome h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+  }
+  
+  .trustpilot-and-button {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+  
+  .card-button-wrapper {
+      justify-content: center;
+      padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .departure-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+  
+  .price-section {
+      margin-top: 10px;
+      align-self: flex-start;
+  }
+  
+  .gallery-container {
+      flex-direction: column;
+  }
+  
+  .left-column, .right-column {
+      width: 100%;
+  }
+  
+  .item-large, .item-medium {
+      height: 200px;
+  }
+  
+  .service-column {
+      flex: 0 0 100%;
+  }
+  
+  .carousel-slide {
+      height: 250px;
+  }
+  
+  .container1 {
+      padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+      padding: 10px;
+  }
+  
+  .header-left h1 {
+      font-size: 40px;
+  }
+  
+  .hotel-nome h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+  }
+  
+  .trustpilot-text, .score, .reviews {
+      font-size: 16px;
+  }
+  
+  .star {
+      width: 16px;
+      height: 16px;
+  }
+  
+  .card-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+  
+  .departure-date, .price {
+      font-size: 18px;
+  }
+  
+  .service-name {
+      font-size: 16px;
+  }
+  
+  .service-icon {
+      width: 35px;
+      height: 35px;
+      font-size: 14px;
+  }
+  
+  .reviews-util {
+      font-size: 26px;
+      margin-bottom: 20px;
+  }
+  
+  .carousel-slide {
+      height: 200px;
+  }
+  
+  .title-content {
+      font-size: 18px;
+      white-space: normal;
+      text-align: center;
+  }
 }
