@@ -1,0 +1,720 @@
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'arial';
+}
+
+body {
+
+ display: flex;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.nav1 {
+background-color: rgba(255, 255, 255, 0.95);
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 100;
+height: 190px;
+transition: all 0.4s ease;
+background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0))
+
+}
+.nav1.shrink {
+height: 70px;
+
+}
+.nav1.shrink .row5 {
+height: 2px;
+margin-top: 2px;
+bottom: 0;
+
+}
+.row5 {
+transition: all 0.3s ease;
+margin-top: 90px;
+margin-bottom: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+z-index: 3;
+}
+.navbar-nav .nav-link {
+  font-size: 30px;
+  color:#180F4A;
+  font-family: "Arial";
+  
+}
+#destino{
+    font-size: 30px;
+    margin-top: 30px;
+    color:#180F4A;
+    font-family: "Arial";
+    
+}
+#destino::after {
+    display: none !important;
+  }
+
+.campanha{
+margin-top: 30px;
+margin-left: -12px !important;
+}
+#logo{
+width: 300px;
+height: 200px;
+position: absolute;
+display: flex;
+left: 39%;
+transition: all 0.3s ease;
+opacity: 1;
+margin-top: -20px;
+}
+#logo.hidden {
+
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+  
+}
+#language{
+height: 22px;
+background-color: transparent !important;
+border: none !important;
+
+
+}
+#lingua{
+margin-left: 370px;
+position: absolute;
+z-index: 100;
+}
+#home{
+height: 30px;
+margin-top: 31px;
+}
+
+.airplane {
+position: fixed;
+top: 0; 
+right: 10px; 
+font-size: 2rem; 
+color: #180F4A;; 
+z-index: 1000;
+transform: rotate(180deg); 
+transition: top 0.1s ease, transform 0.8s ease; 
+cursor: pointer; 
+}
+
+.airplane:hover {
+color: #0056b3;
+transform: scale(1.1); 
+}
+
+
+.container1 {
+padding-top: 200px;
+max-width: 100%;
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 20px;
+padding: 0 20px;
+margin-top: 200px;
+}
+
+.header-left h1{
+  font-size: 70px;
+  font-weight: 700;
+  color: #180F4A;
+  margin-bottom: 8px;
+  font-family: Dancing Script;
+}
+
+.trustpilot-and-button {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+flex-wrap: wrap;
+}
+
+.trustpilot-rating {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.trustpilot-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trustpilot-text {
+  color: #00B67A;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: #00B67A;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.score {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.reviews {
+  color: #555;
+  font-size: 20px;
+}
+
+.card-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 20px; /* opcional, afasta da borda */
+}
+
+
+.card-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #180F4A);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  display: flex;
+  width: auto;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 15px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+ 
+.card-button:hover {
+  background: linear-gradient(135deg, #003f7f);
+  transform: translateY(-3px);
+}
+
+
+/* Departure section */
+.departure-section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 0;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+margin-bottom: 20px;
+flex-wrap: wrap;
+}
+
+.departure-date {
+font-size: 20px;
+color: black;
+font-weight: 700;
+}
+
+.price-section {
+display: flex;
+align-items: center;
+}
+
+.price {
+font-size: 24px;
+font-weight: 700;
+margin-right: 15px;
+}
+
+/* Carousel styling */
+.carousel-container {
+position: relative;
+width: 100%;
+height: auto;
+aspect-ratio: 16/9;
+overflow: hidden;
+border-radius: 10px;
+margin-bottom: -90px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: contain; 
+  background-size: cover;
+  background-position: center;
+  background-color: #f0f0f0;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+
+.carousel {
+display: flex;
+transition: transform 0.5s ease-in-out;
+width: 100%;
+}
+.carousel-slide {
+min-width: 100%;
+height: auto; 
+background-size: cover;
+background-position: center;
+margin-bottom: 30px;
+}
+
+.hotel-nome {
+margin-top: 100px;
+padding-top: 0;
+margin-bottom: 40px;
+}
+
+.hotel-nome h2{
+margin-top: 30px;
+font-size: 70px;
+font-weight: 700;
+color: #180F4A;
+margin-bottom: 10px;
+line-height: 1;
+font-family: 'dancing script', sans-serif;
+text-align: center;
+}
+
+.gallery-container {
+max-width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.left-column {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+min-width: 300px;
+}
+
+.right-column {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+min-width: 300px;
+}
+
+.gallery-item {
+overflow: hidden;
+border-radius: 4px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+position: relative;
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.05);
+}
+
+.item-large {
+height: 400px;
+}
+
+.item-medium {
+height: 300px;
+}
+
+
+
+.title-container {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+position: relative;
+margin-top: 50px;
+}
+
+.title-line {
+height: 1px;
+background-color: #999;
+flex-grow: 1;
+}
+
+.title-content {
+padding: 0 20px;
+display: flex;
+align-items: center;
+font-size: 24px;
+font-weight: 500;
+color: #555;
+white-space: nowrap;
+}
+
+.title-icon {
+margin-right: 10px;
+color: #666;
+}
+
+.services-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: flex-start;
+margin-bottom: 30px;
+}
+
+.service-column {
+flex: 0 0 calc(50% - 10px);
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.service-item {
+display: flex;
+align-items: center;
+margin-left: 0;
+}
+
+.service-icon {
+margin-left: 50px;
+width: 40px;
+height: 40px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 15px;
+}
+
+.service-name {
+font-size: 18px;
+color: #666;
+font-weight: 400;
+}
+
+.reviews-util {
+font-family: 'Dancing Script';
+text-align: center;
+margin-top: 10px;
+font-size: 40px;
+margin-bottom: 30px;
+}
+
+.card {
+border: 2px solid #faf5f5;
+height: auto;
+padding: 15px;
+margin-bottom: 15px;
+
+}
+.container2{
+
+padding-bottom: 50px ;
+padding-top: 50px;
+color: #180F4A;
+}
+
+.user-content p {
+margin-top: 2px;
+font-size: 12px;
+}
+
+.rounded-circle {
+height: 40px;
+width: 40px;
+margin-bottom: 10px;
+}
+
+.ratings i {
+color: #FFD700;
+}
+
+
+.container-column {
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 20px;
+min-height: 600px;
+}
+
+
+h2 {
+margin-bottom: 20px;
+color: #333;
+}
+
+.checklist {
+list-style-type: none;
+}
+
+.checklist li {
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+}
+
+.checklist input[type="checkbox"] {
+margin-right: 10px;
+width: 18px;
+height: 18px;
+}
+
+.checklist label {
+font-size: 16px;
+cursor: pointer;
+}
+
+.checklist input[type="checkbox"]:checked + label {
+text-decoration: line-through;
+color: #888;
+}
+
+.map-placeholder {
+width: 100%;
+height: 100%;
+background-color: #eee;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.accordion-button {
+color: #0078a8;
+font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+color: #0078a8;
+background-color: rgba(0, 120, 168, 0.05);
+box-shadow: none;
+}
+
+.accordion-button:focus {
+box-shadow: none;
+border-color: rgba(0, 120, 168, 0.1);
+}
+
+.accordion-flush .accordion-item {
+border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+.container-column {
+    flex-direction: column;
+}
+
+.left-column, .right-column {
+    min-width: 100%;
+}
+
+.service-item {
+    margin-left: 0;
+}
+}
+
+@media (max-width: 992px) {
+.header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-left h1 {
+    font-size: 50px;
+}
+
+.carousel-container {
+    height: 300px;
+}
+
+.hotel-nome h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.trustpilot-and-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-button-wrapper {
+    justify-content: center;
+    padding-right: 0;
+}
+}
+
+@media (max-width: 768px) {
+.departure-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.price-section {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.gallery-container {
+    flex-direction: column;
+}
+
+.left-column, .right-column {
+    width: 100%;
+}
+
+.item-large, .item-medium {
+    height: 200px;
+}
+
+.service-column {
+    flex: 0 0 100%;
+}
+
+.carousel-slide {
+    height: 250px;
+}
+
+.container1 {
+    padding-top: 40px;
+}
+}
+
+@media (max-width: 576px) {
+body {
+    padding: 10px;
+}
+
+.header-left h1 {
+    font-size: 40px;
+}
+
+.hotel-nome h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.trustpilot-text, .score, .reviews {
+    font-size: 16px;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+}
+
+.card-button {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.departure-date, .price {
+    font-size: 18px;
+}
+
+.service-name {
+    font-size: 16px;
+}
+
+.service-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.reviews-util {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.carousel-slide {
+    height: 200px;
+}
+
+.title-content {
+    font-size: 18px;
+    white-space: normal;
+    text-align: center;
+}
+}
+
+@media (max-width: 991px) {
+.navbar-collapse {
+    margin-top: 1rem;
+}
+
+.language-dropdown {
+    margin-top: 1rem;
+}
+}
+
+
