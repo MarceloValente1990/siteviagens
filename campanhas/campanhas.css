@@ -328,10 +328,11 @@
 
 .rodape{
   background-color: #f2fbfb;
- 
+  position: absolute;
 }
 #logo2{
-  width: 100px;
+  width: 200px;
+  height: 170px;
 }
 .copy{
   color: #180F4A;
