@@ -78,11 +78,14 @@
     font-family: "Rampart One", sans-serif; 
 }
 .rodape{
+    
     background-color: #f2fbfb;
+    width: 100%;
    
 }
 #logo2{
-    width: 100px;
+    width: 200px;
+    height: 170px;
 }
 .copy{
     color: #180F4A;
