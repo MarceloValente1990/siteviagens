@@ -30,64 +30,67 @@
     <title>TripUP</title>
 </head>
 <body>
-<!-- nav  -->
+    <!-- nav  -->
     <div class="container-fluid nav1">
-        <div class="row">
-            <P><a href="index.html"><img src="imagens/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a></P>
-            <nav class="navbar navbar-expand-lg bg-transparent">
-                <div class="container-fluid nav-link row5 col-12 col-md-6 col-sm-5">
-                  <a class="navbar-brand" href="index.html"><img src="imagens/home.png" alt="" id="home"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+      <div class="row">
+        
+          <a href="#"><img src="imagens/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a>
+        
+    
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container-fluid">
+            <!-- Botão hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+              aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menu colapsável -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav row5 col-12 col-md-6 col-sm-5">
+                <!-- Destinos -->
+                <li class="nav-item dropdown nav-link">
+                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
+                    Destinos
                   </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown nav-link">
-                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
-                          Destinos
-                        </button>
-                        <ul class="dropdown-menu dropdown">
-                          <li><a class="dropdown-item" href="#">Europa</a></li>
-                        <li><a class="dropdown-item" href="#">Caribe</a></li>
-                        <li><a class="dropdown-item" href="#">Sudeste Asiático</a></li>
-                        <li><a class="dropdown-item" href="#">América do Sul</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="container-fluid nav-link col-12 col-md-4 col-sm-5 campanha">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="">Campanhas</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#explora1">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#celular2">Contactos</a>
-                    </li>
-                </div>
-                <div class="container-fluid nav-link col-12 col-md-4 col-sm-5">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <ul class="dropdown-menu dropdown">
+                    <li><a class="dropdown-item" href="#">Europa</a></li>
+                    <li><a class="dropdown-item" href="#">Caribe</a></li>
+                    <li><a class="dropdown-item" href="#">Sudeste Asiático</a></li>
+                    <li><a class="dropdown-item" href="#">América do Sul</a></li>
+                  </ul>
+                </li>
+    
+                <!-- Campanhas, Blog, Contactos -->
+                <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+                  <a class="nav-link" href="">Campanhas</a>
+                </li>
+                <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+                  <a class="nav-link" href="">Blog</a>
+                </li>
+                <li class="nav-item nav-link campanha1 col-12 col-md-4 col-sm-5">
+                  <a class="nav-link" href="contatos.html">Contactos</a>
+                </li>
+    
+                <!-- Idioma -->
+                <li class="nav-item dropdown nav-link col-12 col-md-4 col-sm-5">
+                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="lingua">
+                    <img src="imagens/flagportugal.png" id="language" alt="">
                   </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="lingua" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown nav-link">
-                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="imagens/flagportugal.png" id="language" alt="">
-                        </button>
-                        <ul class="dropdown-menu dropdown w-auto" id="language">
-                          <li><a class="dropdown-item" href="#" id="language"><img src="imagens/flagengland.png"  alt=""id="language" ></a><p></p></li>
-                          <li><a class="dropdown-item" href="#" id="language"><img src="imagens/flagspain.png" alt=""id="language"></a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                </div>
-              </nav>
-        </div>
+                  <ul class="dropdown-menu dropdown w-auto" id="language">
+                    <li>
+                      <a class="dropdown-item" href="indexeng.html"><img src="imagens/flagengland.png" alt="" id="language"></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="indexes.html"><img src="imagens/flagspain.png" alt="" id="language"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
 <!--aviao-->
     <div class="airplane">

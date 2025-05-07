@@ -1,6 +1,6 @@
 .blog{
     background-color: rgb(237, 237, 234);;
-    height: 350px;   
+    min-height: 350px;   
 }
 .plane{
     height: 60px;
@@ -25,6 +25,7 @@
     background-color: transparent;
     margin-top: 15px;
     transition: 0.3s;
+    margin-bottom: 15px;
 }
 #blog2:hover{
     background-color:#180F4A;
@@ -53,3 +54,83 @@
     color: #180F4A;
     
 }
+@media screen and (max-width: 768px) {
+    .textocorpo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .textocorpo2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #textocorpo3 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #letra {
+        font-size: 20px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    #info,
+    #info2 {
+        margin: 35px auto;
+        display: block;
+        font-size: 14px;
+        padding: 8px 20px;
+        text-align: center;
+    }
+
+    .imagemcorpopag,
+    .imagemcorpopag2 {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .colcorpo2,
+    .colcorpo3,
+    .colcorpo4,
+    .colcorpo5,
+    .colcorpo6 {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 10px 0 !important;
+        float: none !important;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hindex,
+    .hindex2 {
+        position: static;
+        height: auto;
+        background: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .textoporto {
+        font-size: 35px !important;
+        margin: 10px 0 !important;
+        text-align: center;
+    }
+
+    #porto2 {
+        margin: 15px auto !important;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+    }
+}
+

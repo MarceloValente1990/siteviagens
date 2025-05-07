@@ -26,6 +26,8 @@
   line-height: 100%;
   letter-spacing: 0%;
   z-index: 3;
+  align-items: center;
+ 
 }
 .navbar-nav .nav-link {
     font-size: 30px;
@@ -46,7 +48,12 @@
 
 .campanha{
   margin-top: 30px;
-  margin-left: -12px !important;
+  
+  
+}
+.campanha1{
+  margin-top: 30px;
+  margin-left: -90px !important;
 }
 #logo{
   width: 300px;
@@ -56,6 +63,7 @@
   left: 39%;
   transition: all 0.3s ease;
   opacity: 1;
+  z-index: 150;
 }
 #logo.hidden {
   
@@ -71,70 +79,109 @@
   height: 22px;
   background-color: transparent !important;
   border: none !important;
+  margin-left: 60px;
   
 }
 #lingua{
-  margin-left: 360px;
-  position: absolute;
   z-index: 100;
-  margin-top: -10px;
+  margin-top: 30px !important;
+  margin-left: 60px;
+  border: none !important;
 }
 #home{
   height: 30px;
   margin-top: 31px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
+  .nav1 {
+    height: 140px;
+    position: fixed !important;
+  }
+
   #logo {
-    width: 180px;
-    height: auto;
+    width: 220px;
+    height: 130px;
     left: 50%;
     transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .row5 {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    background-color: (255, 255, 255, 0.493);
+  }
+
+  .navbar-nav .nav-link,
+  #destino {
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .campanha {
+    margin-top: 15px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .campanha1{
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 10px !important;
+
+  #lingua{
+    margin-top: 15px !important;
+    margin-left: 0px !important;
+  }
+}
+
+/* Celular: 549px ou menor */
+@media (max-width: 549px) {
+  .nav1 {
+    height: 120px;
+    position: fixed;
+  }
+
+  #logo {
+    width: 160px;
+    height: 100px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .row5 {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar-nav .nav-link,
   #destino {
     font-size: 18px;
+    margin-top: 8px;
     text-align: center;
-    margin-top: 10px;
   }
 
   .campanha {
     margin-top: 10px;
-    margin-left: 0;
+    text-align: center;
   }
 
   #lingua {
-    margin-left: 0;
-    position: static;
+    margin-top: 10px !important;
+    margin-left: -60px !important;
+    text-align: center;
   }
 
-  .porto .textoporto {
-    font-size: 22px;
+  #language {
+    height: 20px;
+    margin-left: 80px;
+  }
+
+  #home {
+    margin-top: 10px;
   }
 }
-
-/* Tablets (telas médias) */
-@media (min-width: 576px) and (max-width: 991.98px) {
-  #logo {
-    width: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 22px;
-  }
-
-  #destino {
-    font-size: 22px;
-    margin-top: 15px;
-  }
-
-  .campanha {
-    margin-top: 20px;
-  }
-
-  #lingua {
-    margin-left: 150px;
-  }
 }
