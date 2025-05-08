@@ -30,3 +30,38 @@
 #carrosselicone:active{
   transform: translateY(3px);
 }
+@media (max-width: 768px) {
+  .imagem {
+    margin-top: 150px;
+    height: 350px;
+  }
+
+  .carrosselnome {
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.5); /* Mais visível */
+    color: white; /* Reaplicando, caso sobrescrito */
+    z-index: 200;
+  }
+
+  #carrosselicone {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 548px) {
+  .imagem {
+    margin-top: 100px;
+    height: 250px;
+  }
+
+  .carrosselnome {
+    font-size: 24px;
+  }
+
+  #carrosselicone {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
