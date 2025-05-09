@@ -244,9 +244,9 @@ body {
 .container1 {
 
 
-  padding-top: 200px;
+  
   max-width: 100% !important;
-  width: 100%;
+  width: 100% !important;
   min-height: 100vh;
   display: inline;
   flex-direction: column;
@@ -331,7 +331,7 @@ flex-wrap: wrap;
 .card-button {
   padding: 10px 20px;
   background: linear-gradient(135deg, #180F4A);
-  color: white;
+  color: white !important;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -355,7 +355,9 @@ flex-wrap: wrap;
   background: linear-gradient(135deg, #003f7f);
   transform: translateY(-3px);
 }
-
+#botao{
+  text-decoration: none;
+}
 
 /* Departure section */
 .departure-section {

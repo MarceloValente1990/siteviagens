@@ -64,7 +64,9 @@
       gap: 8px;
       margin-bottom: 10px;
     }
-    
+     #botao{
+      text-decoration: none;
+   }
     .trustpilot-logo {
       display: flex;
       align-items: center;
