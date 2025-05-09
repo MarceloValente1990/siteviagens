@@ -209,20 +209,21 @@
   }
 }
   
-  .airplane {
-    position: relative;
-    right: 10px; 
-    font-size: 2rem; 
-    color: #180F4A;; 
-    z-index: 1000;
-    transform: rotate(180deg); 
-    transition: top 0.1s ease, transform 0.8s ease; 
-    cursor: pointer; 
+.airplane {
+  position: fixed;
+  top: 0; 
+  right: 10px; 
+  font-size: 2rem; 
+  color: #180F4A;; 
+  z-index: 1000;
+  transform: rotate(180deg); 
+  transition: top 0.1s ease, transform 0.8s ease; 
+  cursor: pointer; 
   }
   
   .airplane:hover {
-    color: #0056b3;
-    transform: scale(1.1); 
+  color: #0056b3;
+  transform: scale(1.1); 
   }
 
 .main-title {
@@ -230,7 +231,7 @@
     font-size: 80px;
     text-align: center;
     color: #180F4A;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .main-title2{
@@ -245,7 +246,7 @@
     position: relative;
     z-index: 2;
     top: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .title-wrapper {
@@ -259,8 +260,8 @@
     width: 17%;
     z-index: 1;
     opacity: 0.8;
-    top: -40px;
-    left: 210px;
+    top: 25px;
+    left: 40px;
 }
 
 /* Estilos do conteúdo principal */
