@@ -66,19 +66,11 @@
 
   .plane {
     height: 40px;
-    margin-left:  170px;
     display: inline-block;
-    
   }
-
   #dicas {
     font-size: 32px;
-    margin-left: 210px !important;
     margin-bottom: 20px;
-    text-align: center !important;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
   }
   #blog2 {
     font-size: 16px;
