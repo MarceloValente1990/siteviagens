@@ -20,6 +20,8 @@ body {
 }
 
 
+/* navbar */
+
 .nav1 {
 
 
@@ -106,9 +108,10 @@ body {
 }
 #lingua{
   z-index: 100;
-  margin-top: 30px !important;
+  margin-top: 20px !important;
   margin-left: 60px;
   border: none !important;
+  background: transparent;
 }
 #home{
   height: 30px;
@@ -219,23 +222,23 @@ body {
     margin-top: 10px;
   }
 }
-
+  
 .airplane {
-position: fixed;
-top: 0; 
-right: 10px; 
-font-size: 2rem; 
-color: #180F4A;; 
-z-index: 1000;
-transform: rotate(180deg); 
-transition: top 0.1s ease, transform 0.8s ease; 
-cursor: pointer; 
-}
-
-.airplane:hover {
-color: #0056b3;
-transform: scale(1.1); 
-}
+  position: fixed;
+  top: 0; 
+  right: 10px; 
+  font-size: 2rem; 
+  color: #180F4A;; 
+  z-index: 1000;
+  transform: rotate(180deg); 
+  transition: top 0.1s ease, transform 0.8s ease; 
+  cursor: pointer; 
+  }
+  
+  .airplane:hover {
+  color: #0056b3;
+  transform: scale(1.1); 
+  }
 
 
 .container1 {
@@ -256,7 +259,7 @@ justify-content: space-between;
 align-items: flex-start;
 margin-bottom: 20px;
 padding: 0 20px;
-margin-top: 30px;
+margin-top: 230px;
 }
 
 .header-left h1{

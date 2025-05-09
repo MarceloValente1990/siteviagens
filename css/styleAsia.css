@@ -210,21 +210,21 @@
 }
 
 
-  .airplane {
-    position: relative;
-    top: 0; 
-    right: 10px; 
-    font-size: 2rem; 
-    color: #180F4A;; 
-    z-index: 1000;
-    transform: rotate(180deg); 
-    transition: top 0.1s ease, transform 0.8s ease; 
-    cursor: pointer; 
+.airplane {
+  position: fixed;
+  top: 0; 
+  right: 10px; 
+  font-size: 2rem; 
+  color: #180F4A;; 
+  z-index: 1000;
+  transform: rotate(180deg); 
+  transition: top 0.1s ease, transform 0.8s ease; 
+  cursor: pointer; 
   }
   
   .airplane:hover {
-    color: #0056b3;
-    transform: scale(1.1); 
+  color: #0056b3;
+  transform: scale(1.1); 
   }
 
 
@@ -233,12 +233,12 @@
     font-size: 75px;
     text-align: center;
     color: #180F4A;
-    margin-top: 110px;
+    margin-top: 120px;
 }
 
 .main-title2{
     font-family: arial;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: #180F4A;  
     font-weight: 300; 
@@ -249,7 +249,7 @@
     position: relative;
     z-index: 2;
     top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .title-wrapper {
@@ -260,11 +260,11 @@
 
 .img-asia{
     position: absolute;
-    width: 23%;
+    width: 20%;
     z-index: 1;
     opacity: 0.9;
-    top: 15px;
-    left: 130px;
+    top: 40px;
+    left: 45px;
 }
 
 /* Estilos do conteúdo principal */

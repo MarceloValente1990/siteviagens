@@ -26,67 +26,118 @@
 
 <body>
 
-<!-- nav  -->
+<!-- Nav -->
 <div class="container-fluid nav1">
-  <div class="row">
-      <P><a href="index.html"><img src="/imagem/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a></P>
+    <div class="row">
+      <p>
+        <a href="#"
+          ><img
+            src="/imagem/TripUpLogo.png"
+            class="img-fluid"
+            alt=""
+            id="logo"
+        /></a>
+      </p>
+
       <nav class="navbar navbar-expand-lg bg-transparent">
-          <div class="container-fluid nav-link row5 col-12 col-md-6 col-sm-5">
-            <a class="navbar-brand" href="index.html"><img src="/imagem/home.png" alt="" id="home"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown nav-link">
-                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
-                    Destinos
-                  </button>
-                  <ul class="dropdown-menu dropdown">
-                    <li><a class="dropdown-item" href="#">Europa</a></li>
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNavDarkDropdown"
+          >
+            <ul class="navbar-nav row5 col-12 col-md-6 col-sm-5">
+              <!-- Destinos -->
+              <li class="nav-item dropdown nav-link">
+                <button
+                  class="btn dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="destino"
+                >
+                  Destinos
+                </button>
+                <ul class="dropdown-menu dropdown">
+                  <li><a class="dropdown-item" href="#">Europa</a></li>
                   <li><a class="dropdown-item" href="#">Caribe</a></li>
-                  <li><a class="dropdown-item" href="#">Sudeste Asiático</a></li>
-                  <li><a class="dropdown-item" href="#">América do Sul</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="container-fluid nav-link col-12 col-md-4 col-sm-5 campanha">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+                  <li>
+                    <a class="dropdown-item" href="#">Sudeste Asiático</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">América do Sul</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Outros links -->
+              <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
                 <a class="nav-link" href="">Campanhas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#explora1">Blog</a>
+              <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+                <a class="nav-link" href="../blog/blog.html">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#celular2">Contactos</a>
+              <li
+                class="nav-item nav-link campanha1 col-12 col-md-4 col-sm-5"
+              >
+                <a class="nav-link" href="">Contactos</a>
               </li>
+
+              <!-- Idioma -->
+              <li class="nav-item dropdown nav-link col-12 col-md-4 col-sm-5">
+                <button
+                  class="btn dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="lingua"
+                >
+                  <img
+                    src="/imagem/flagportugal.png"
+                    id="language"
+                    alt=""
+                  />
+                </button>
+                <ul class="dropdown-menu dropdown w-auto" id="language">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="indexeng.html"
+                      id="language"
+                      ><img
+                        src="/imagem/flagengland.png"
+                        alt=""
+                        id="language"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="indexes.html" id="language"
+                      ><img
+                        src="/imagem/flagspain.png"
+                        alt=""
+                        id="language"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="container-fluid nav-link col-12 col-md-4 col-sm-5">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="lingua" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown nav-link">
-                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="/imagem/flagportugal.png" id="language" alt="">
-                  </button>
-                  <ul class="dropdown-menu dropdown w-auto" id="language">
-                    <li><a class="dropdown-item" href="#" id="language"><img src="/imagem/flagengland.png"  alt=""id="language" ></a><p></p></li>
-                    <li><a class="dropdown-item" href="#" id="language"><img src="/imagem/flagspain.png" alt=""id="language"></a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </div>
-        </nav>
+        </div>
+      </nav>
+    </div>
   </div>
-</div>
   
-        <!--aviao-->
+          
+<!--aviao-->
 <div class="airplane">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
     <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V18l-2 1v2l3-1 3 1v-2l-2-1v-4.5l8 2.5z"/>
@@ -131,7 +182,7 @@
       <div class="departure-date">Partida de Lisboa: Sab, 15 Nov 2025</div>
   
       <div class="price-section">
-          <div class="price">€1,950 por pessoa</div>
+          <div class="price">€975 por pessoa</div>
       </div>
   </div>
 
