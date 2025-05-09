@@ -10,113 +10,207 @@
 /* navbar */
 
 .nav1 {
-    background-color: rgba(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    height: 215px;
-    transition: all 0.4s ease;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  height: 200px;
+  transition: all 0.4s ease;
+ 
+}
+.nav1.shrink {
+  height: 70px;
+  
+}
+.nav1.shrink .row5 {
+  height: 2px;
+  margin-top: 2px;
+  bottom: 0;
+  
+}
+.row5 {
+  transition: all 0.3s ease;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  z-index: 3;
+  align-items: center;
+ 
+}
+.navbar-nav .nav-link {
+    font-size: 30px;
+    color:#180F4A;
     
     
   }
-  .nav1.shrink {
-    height: 70px;
-    
-  }
-  .nav1.shrink .row5 {
-    height: 2px;
-    margin-top: 2px;
-    bottom: 0;
-    
-  }
-  .row5 {
-    transition: all 0.3s ease;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    z-index: 3;
-  }
-  .navbar-nav .nav-link {
+  #destino{
       font-size: 30px;
+      margin-top: 30px;
       color:#180F4A;
-      font-family: "Arial";
+      
+      
+  }
+  #destino::after {
+      display: none !important;
     }
 
-  .navbar .dropdown-toggle {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0;
-    }
-     
-    #destino{
-        font-size: 30px;
-        margin-top: 30px;
-        color:#180F4A;
-        font-family: "Arial";
-        background-color: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-        font-weight: normal;
-      
-    
-        
-    }
-    #destino::after {
-        display: none !important;
-      }
+.campanha{
+  margin-top: 30px;
   
-  .campanha{
-    margin-top: 30px;
+  
+}
+.campanha1{
+  margin-top: 30px;
+  margin-left: -90px !important;
+}
+#logo{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  left: 39%;
+  transition: all 0.3s ease;
+  opacity: 1;
+  z-index: 150;
+}
+#logo.hidden {
+  
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+ 
     
+}
+#language{
+  height: 30px;
+  background-color: transparent !important;
+  border: none !important;
+  margin-left: 30px;
+  padding-top: 5px;
+}
+#lingua{
+  z-index: 100;
+  margin-top: 20px !important;
+  margin-left: 60px;
+  border: none !important;
+  background: transparent;
+}
+#home{
+  height: 30px;
+  margin-top: 31px;
+}
+@media (max-width: 768px) {
+  .nav1 {
+    height: 140px;
+    position: fixed !important;
   }
-  #logo{
-    width: 300px;
-    height: 200px;
-    position: absolute;
+
+  #logo {
+    width: 220px;
+    height: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .row5 {
     display: flex;
-    left: 39%;
-    transition: all 0.3s ease;
-    opacity: 1;
-    
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 120px 0;
+    width: 100%;
+    z-index: 99;
+    position: relative;
   }
-  #logo.hidden {
-  
-        opacity: 0;
-        height: 0;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-   
-      
+
+  .navbar-nav .nav-link,
+  #destino {
+    font-size: 22px;
+    text-align: center;
   }
-  #language{
-    height: 22px;
-    background-color: transparent !important;
-    border: none !important;
-    
-   
-    
-  
+  #destino {
+    margin-top: -250px;
+  }
+  .campanha {
+    margin-top: -90px;
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .campanha1{
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 10px !important;
   }
   #lingua{
-    margin-left: 370px;
-    position: relative;
-    z-index: 100;
-    margin-top: 22px;
-    
-    
+    margin-top: 0px !important;
+    margin-left: 0px !important;
   }
-  #home{
-    height: 30px;
-    margin-top: 31px;
+}
+
+/* Celular: 549px ou menor */
+@media (max-width: 549px) {
+  .nav1 {
+    height: 120px;
+    position: fixed;
   }
+
+  #logo {
+    width: 160px;
+    height: 100px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .row5 {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .navbar-nav .nav-link,
+  #destino {
+    font-size: 18px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  #destino {
+    margin-top: -250px;
+  }
+  .campanha {
+    margin-top: -98px !important;
+    margin-bottom: 5px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .campanha1{
+    
+    text-align: center;
+    margin-left: 10px !important;
+  }
+  #lingua{
+    margin-right: 55px !important;
+    margin-top: -30px !important;
+  }
+  #language {
+    height: 22px;
+    margin-left: 70px;
+  }
+
+  #home {
+    margin-top: 10px;
+  }
+}
   
   .airplane {
-    position: fixed;
-    top: 0; 
+    position: relative;
     right: 10px; 
     font-size: 2rem; 
     color: #180F4A;; 
@@ -136,7 +230,7 @@
     font-size: 80px;
     text-align: center;
     color: #180F4A;
-    margin-top: 140px;
+    margin-top: 100px;
 }
 
 .main-title2{
@@ -219,12 +313,12 @@
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .card-content {
   padding: 50px;
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -289,6 +383,7 @@
     display: flex;
     gap: 10px; /* Space between buttons */
     margin-top: 15px;
+    justify-content: center;
   }
    
   .card-button:hover {
@@ -368,4 +463,15 @@
     .menu {
         display: none;
     }
+}
+
+#destino,
+#destino:focus,
+#destino:hover,
+#destino:active {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-weight: normal;
 }

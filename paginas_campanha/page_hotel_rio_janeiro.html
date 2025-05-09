@@ -7,8 +7,6 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="/css/styleHotelRioJaneiro.css">
-    <link rel="stylesheet" href="/css/stylecontatos.css">
-    <link rel="stylesheet" href="/css/stylenavcontatos.css">
 
     <!-- Link Boostrap -->
     <link rel="stylesheet" href="/bootstrap/bootstrap.css"/>
@@ -24,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
   </head>
 
 <body>
@@ -427,18 +426,18 @@
 
 <script>
     
-  window.addEventListener('scroll', () => {
-  const logo = document.getElementById('logo');
-  const nav = document.querySelector('.nav1');
-
-  if (window.scrollY > 50) {
-    logo.classList.add('hidden');
-    nav.classList.add('shrink');
-  } else {
-    logo.classList.remove('hidden');
-    nav.classList.remove('shrink');
-  }
-});
+    window.addEventListener('scroll', () => {
+    const logo = document.getElementById('logo');
+    const nav = document.querySelector('.nav1');
+  
+    if (window.scrollY > 50) {
+      logo.classList.add('hidden');
+      nav.classList.add('shrink');
+    } else {
+      logo.classList.remove('hidden');
+      nav.classList.remove('shrink');
+    }
+  });
 </script>
 
 
