@@ -55,82 +55,59 @@
     
 }
 @media screen and (max-width: 768px) {
-    .textocorpo {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .textocorpo2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    #textocorpo3 {
-        font-size: 45px;
-        text-align: center;
-    }
-
-    #letra {
-        font-size: 20px;
-        margin-left: 10px;
-        text-align: center;
-    }
-
-    #info,
-    #info2 {
-        margin: 35px auto;
-        display: block;
-        font-size: 14px;
-        padding: 8px 20px;
-        text-align: center;
-    }
-
-    .imagemcorpopag,
-    .imagemcorpopag2 {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-        padding: 0;
-        border-radius: 10px 10px 0 0;
-    }
-    .colcorpo2,
-    .colcorpo3,
-    .colcorpo4,
-    .colcorpo5,
-    .colcorpo6 {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        margin: 10px 0 !important;
-        float: none !important;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .hindex,
-    .hindex2 {
-        position: static;
-        height: auto;
-        background: none;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .textoporto {
-        font-size: 35px !important;
-        margin: 10px 0 !important;
-        text-align: center;
-    }
-
-    #porto2 {
-        margin: 15px auto !important;
-        font-size: 18px;
-        display: block;
-        text-align: center;
-    }
+  .blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 20px;
 }
 
+  .plane {
+    height: 40px;
+    margin-left:  170px;
+    display: inline-block;
+    
+  }
+
+  #dicas {
+    font-size: 32px;
+    margin-left: 210px !important;
+    margin-bottom: 20px;
+    text-align: center !important;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #blog2 {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .rodape {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #logo2 {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .copy {
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .icone {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+  }
+}

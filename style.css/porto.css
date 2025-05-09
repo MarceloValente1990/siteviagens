@@ -33,3 +33,44 @@
     font-size: 60px;
     
 }
+@media screen and (max-width: 768px) {
+  .porto {
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+  }
+
+  .textoporto {
+    font-size: 38px;
+    margin: 0 10px 20px 10px;
+  }
+
+  #porto2 {
+    font-size: 16px;
+    padding: 2px 2px 2px 0px;
+    margin: 20px;
+    border: 2px solid white;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .porto {
+    height: 280px;
+  }
+
+  .textoporto {
+    font-size: 30px;
+  }
+
+  #porto2 {
+    font-size: 14px;
+    padding: 0px 0px;
+    
+  }
+}

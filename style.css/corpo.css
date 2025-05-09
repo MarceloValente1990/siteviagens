@@ -4,11 +4,17 @@
 .textocorpo{ 
     font-size: 40px;
     color: #180F4A;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
 }
 
 .textocorpo2{
-    font-size: 20px;
     color: #180F4A;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
 }
 #textocorpo3{ 
     padding: 2%;
@@ -40,6 +46,7 @@
     
      
 }
+
 .imagemcorpopag2{
     border-radius: 20px;
     width: 100% !important;
@@ -61,8 +68,8 @@
     text-align: center;
     padding: 10px 30px 10px 30px;
     border-radius: 10px;  
-    position: absolute;
-    margin-left: 32%;
+    display: inline-block;
+    margin-left: 34%;
     transition: 0.3s;
 }
 #info:hover{
@@ -79,9 +86,10 @@
     border-bottom: solid red;
     text-align: center;
     border-radius: 10px;  
-    position: absolute;
     margin-left: 25%;
     transition: 0.3s;
+    margin-top: -100px;
+    display: inline-block;
 }
 #info2:hover{
     background-color:#180F4A;
@@ -146,90 +154,98 @@
     margin-top: 2% !important;
 }
 @media screen and (max-width: 768px) {
-  .colcorpo2,
+  .row {
+    flex-direction: column !important;
+    align-items: center !important;
+    display: block !important;
+   
+  }
+.colcorpo2 {
+   min-width: 100dvh !important;
+    margin-left: -20px;
+    
+  }
   .colcorpo3,
   .colcorpo4,
   .colcorpo5,
   .colcorpo6 {
-    width: 100% !important;
-    margin: 0 auto !important;
+    min-width: 100dvh !important;
+    
     padding: 0 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block !important;
+    flex-direction: column !important;
+    align-items: start !important;
     height: auto !important;
-    box-shadow: none;
-    text-align: center;
+    box-shadow: none !important;
+    background-color: #f4f4f4;
+    border-radius: 12px;
   }
 
-  .imagemcorpopag,
-  .imagemcorpopag2 {
+  .imagemcorpopag {
+    min-width: 100dvh !important;
+    object-fit: cover !important;
+    display: block !important;
+    
+  }
+  
+ .imagemcorpopag2 {
+    min-width: 100dvh !important;
+    margin-left: -125px;
+    
+  }
+  
+  .hindex2 {
+    
     width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: cover;
-    border-radius: 0;
-    display: block;
-    margin: 0;
-}
+    text-align: center !important;
+    display: flex !important;
+    
+    
+  }
 
   .textocorpo,
-  .textocorpo2,
-  #textocorpo3 {
-    width: 90%;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  .textocorpo {
-    font-size: 24px;
-  }
-
   .textocorpo2 {
-    font-size: 20px;
-  }
-
-  #textocorpo3 {
-    font-size: 40px;
+    font-size: 20px !important;
+    display: block !important;
+    
   }
 
   #info,
   #info2 {
-    font-size: 14px;
-    padding: 8px 20px;
-    display: inline-block;
-    margin: 15px auto;
-    text-align: center;
-    position: static;
-    transform: none;
+    font-size: 16px !important;
+    padding: 10px 20px !important;
+    display: block !important;
+    transform: none !important;
+    left: auto !important;
   }
 }
   @media screen and (max-width: 549px) {
-    .textocorpo {
-        font-size: 20px;
-        text-align: center;
-        margin: 10px auto;
-      }
-    
-      .textocorpo2 {
-        font-size: 16px;
-        text-align: center;
-        margin: 10px auto;
-      }
-    
-      #info,
-      #info2 {
-        font-size: 12px;
-        padding: 6px 16px;
-        display: inline-block;
-        margin: 10px auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-      }
   
-    .imagemcorpopag,
-    .imagemcorpopag2 {
-      border-radius: 10px;
+  .textocorpo {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto;
     }
+    
+  .textocorpo2 {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+  }
+.imagemcorpopag2 {
+    min-width: 100dvh !important;
+    margin-left: 0px;
+    
+  }
+  #info,
+  #info2 {
+    font-size: 12px;
+    padding: 6px 16px;
+    display: block;
+    margin: 15px auto;
+    
+    transform: none;
+    text-align: center;
+  }
   }
