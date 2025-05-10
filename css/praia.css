@@ -250,6 +250,7 @@
     z-index: 2;
     top: 50px;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .title-wrapper {
@@ -260,11 +261,11 @@
 
 .img-asia{
     position: absolute;
-    width: 20%;
+    width: 15%;
     z-index: 1;
     opacity: 0.9;
-    top: 40px;
-    left: 45px;
+    top: 45px;
+    left: 4px;
 }
 
 /* Estilos do conteúdo principal */
