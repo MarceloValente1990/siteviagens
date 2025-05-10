@@ -231,7 +231,11 @@
 .favorite-button:hover {
   background: linear-gradient(135deg, #fd99a2, #fd99a2);
 }
-
+.clicado {
+  background-color: red;
+  color: pink;
+  transform: scale(1.05);
+}
 .rodape{
   background-color: #f2fbfb;
   position: absolute;
