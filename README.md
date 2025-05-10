@@ -1,4 +1,5 @@
 🌍 Trip UP - Site de Viagens
+
 Este repositório contém o projeto desenvolvido em grupo para a criação do Trip UP, um site fictício de uma agência de viagens. O principal objetivo foi aplicar e consolidar conhecimentos de desenvolvimento web, design e trabalho colaborativo.
 
 🚀 Sobre o Projeto
