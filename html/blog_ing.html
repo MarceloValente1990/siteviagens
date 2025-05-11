@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!---link para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+    <!---link para css-->
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/airplane.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <!---links para tipo de letra-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&amp;display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- link icones -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" />
+    <link rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <div class="container-fluid nav1">
+        <div class="row">
+            <p>
+                <a href="../index.html"><img src="../imagens/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a>
+            </p>
+
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav row5 col-12 col-md-6 col-sm-5">
+                            <!-- Destinos -->
+                            <li class="nav-item dropdown nav-link">
+                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
+                                    Destinations
+                                </button>
+                                <ul class="dropdown-menu dropdown">
+                                    <li><a class="dropdown-item" href="paginas_destino/pageEuropa.html">Europe</a></li>
+                                    <li><a class="dropdown-item" href="paginas_destino/pageCaraibas.html">Caribbean</a></li>
+                                    <li><a class="dropdown-item" href="paginas_destino/pageAsia.html">Southeast Asia</a></li>
+                                    <li><a class="dropdown-item" href="paginas_destino/pageAmerica.html">South America</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Outros links -->
+                            <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+                                <a class="nav-link" href="campanhas.html">Promotions</a>
+                            </li>
+                            <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item nav-link campanha1 col-12 col-md-4 col-sm-5">
+                                <a class="nav-link" href="contatos.html">Contacts</a>
+                            </li>
+
+                            <!-- Idioma -->
+                            <li class="nav-item dropdown nav-link col-12 col-md-4 col-sm-5">
+                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="lingua">
+                                    <img src="../imagens/flagportugal.png" id="language" alt="">
+                                </button>
+                                <ul class="dropdown-menu dropdown w-auto" id="language">
+                                    <li><a class="dropdown-item" href="../indexeng.html" id="language"><img src="../imagens/flagengland.png" alt="" id="language"></a></li>
+                                    <li><a class="dropdown-item" href="../indexes.html" id="language"><img src="../imagens/flagspain.png" alt="" id="language"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!---aviao-->
+    <div class="airplane">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V18l-2 1v2l3-1 3 1v-2l-2-1v-4.5l8 2.5z" />
+        </svg>
+    </div>
+
+    <div class="title-content">
+        <h1 class="blog-title">Blog</h1>
+        <p class="sub-title">ready to take off?</p>
+    </div>
+
+    <div class="sub-texto">
+        The four most visited cities in the world in 2024
+    </div>
+
+    <!---cards-->
+    <div class="row places">
+        <div class="col-md-6 mb-5 test">
+            <div class="blog blog-bangkok">
+                <div class="title-box">
+                    <h3>BANGKOK, THAILAND</h3>
+                    <hr />
+                    <div class="intro">Most visited city</div>
+                </div>
+                <div class="info">
+                    <span>32.4 million visitors</span>
+                    <p>
+                        Renowned for its temples, markets and street food
+                        known throughout the world.
+                    </p>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-5 test">
+            <div class="blog blog-istambul">
+                <div class="title-box">
+                    <h3>ISTANBUL, TURKEY</h3>
+                    <hr />
+                    <div class="intro">Second most visited city</div>
+                </div>
+                <div class="info">
+                    <span>23 million visitors</span>
+                    <p>
+                        Known for uniting the history of the East with the dynamism of the
+                        West.
+                    </p>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-5 test">
+            <div class="blog blog-londres">
+                <div class="title-box">
+                    <h3>LONDON, UNITED KINGDOM</h3>
+                    <hr />
+                    <div class="intro">Third most visited city</div>
+                </div>
+                <div class="info">
+                    <span>21.7 million visitors</span>
+                    <p>London continues to be a global icon and offers a perfect blend of tradition and innovation.</p>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-5 test">
+            <div class="blog blog-hongkong">
+                <div class="title-box">
+                    <h3>HONG KONG, CHINA</h3>
+                    <hr />
+                    <div class="intro">Fourth most visited city</div>
+                </div>
+                <div class="info">
+                    <span>20.5 million visitors</span>
+                    <p>Known for its skyscrapers, temples, culture and gastronomy.</p>
+                </div>
+
+                <div class="color-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-madeira">
+        <div class="madeira-title">Discover Portugal</div>
+
+        <!---telemovel + fotos-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 mobile">
+                    <div class="row">
+                        <div class="col-md-6 col-12 mobile">
+                            <div class="phone-card">
+                                <div class="btn1"></div>
+                                <div class="btn2"></div>
+                                <div class="btn3"></div>
+                                <div class="btn4"></div>
+                                <div class="phone-card-inner">
+                                    <!-- Bootstrap Carousel -->
+                                    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../imagens/pico.jpg" class="d-block w-100" alt="Image 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../imagens/praia_seixal.jpg" class="d-block w-100" alt="Image 2" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../imagens/piscinas.jpg" class="d-block w-100" alt="Image 3" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../imagens/cascata_anjos.jpg" class="d-block w-100" alt="Image 4" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-top">
+                                    <div class="phone-camera">
+                                        <div class="phone-int"></div>
+                                    </div>
+                                    <div class="phone-speaker"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mad-text">
+                            <h3>Explore Madeira</h3>
+                            <p>
+                                Natural landscapes, beaches and unparalleled gastronomy.
+                            </p>
+                            <ul>
+                                <li>Pico do Arieiro</li>
+                                <li>Praia do Seixal</li>
+                                <li>Natural Pools</li>
+                                <li>Cascata dos Anjos</li>
+                            </ul>
+                            <p>
+                                The more you explore the island, the more enchanted you become.
+                            </p>
+                            <p>Fun facts:</p>
+                            <ul>
+                                <li>The Faial-Cortado Tunnel is 3,170 meters long.</li>
+                                <li>It has about 140 tunnels.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <div class="container py-4">
+                        <div class="gallery-grid">
+                            <img src="../imagens/bolo_caco.jpg" alt="Image 1" class="item1" />
+                            <img src="../imagens/poncha.jpg" alt="Image 2" class="item2" />
+                            <img src="../imagens/carrinhos.jpg" alt="Image 3" class="item3" />
+                            <img src="../imagens/espetada.jpg" alt="Image 4" class="item4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---reviews-->
+
+    <div class="reviews">Reviews de Utilizadores</div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    <div class="user-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle" width="80" />
+                    </div>
+
+                    <div class="user-content">
+                        <h5 class="mb-0">Carla Mendes</h5>
+                        <span>Marketing Analyst</span>
+                        <p>Impeccable service! Fast and great service.</p>
+                    </div>
+
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    <div class="user-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle" width="80" />
+                    </div>
+
+                    <div class="user-content">
+                        <h5 class="mb-0">João Ferreira</h5>
+                        <span>Web Developer</span>
+                        <p>
+                            Very pleased with the quality. I will return to your site whenever
+                            I need!
+                        </p>
+                    </div>
+
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    <div class="user-image">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle" width="80" />
+                    </div>
+
+                    <div class="user-content">
+                        <h5 class="mb-0">Rita Oliveira</h5>
+                        <span>Cook</span>
+                        <p>Excellent service and great attention to detail.</p>
+                    </div>
+
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class=" container-fluid text-center rodape">
+        <div class="living">
+            <p><img src="../imagens/TripUpLogo.png" alt="" id="logo2"></p>
+        </div>
+        <div>
+            <P>
+                <a href="../html/manutencao.html" class="icone"><i class="fi-brands-facebook"></i></a>
+                <a href="../html/manutencao.html" class="icone"><i class="fi-brands-instagram"></i></a>
+                <a href="../html/manutencao.html" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
+            </P>
+        </div>
+        <div class="copy">
+            <p>© Copyright 2025 TripUP® - All rights reserved - </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-...hash..." crossorigin="anonymous"></script>
+    <script src="../scripts/airplane.js"></script>
+    <script src="../scripts/nav.js"></script>
+</body>
+
+
+</html>
