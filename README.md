@@ -36,7 +36,7 @@ Este foi um projeto de grupo, desenvolvido de forma colaborativa com divisão de
 ```
 
 ## 🚀 Deploy
-O website foi publicado via **GitHub Pages**.
+O [website](https://marcelovalente1990.github.io/siteviagens/) foi publicado via **GitHub Pages**.
 
 ## 🧠 Competências Desenvolvidas
 - Conversão de layouts Figma em código funcional
