@@ -11,6 +11,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="/css/praia.css">
+    <link rel="stylesheet" href="../../css/botaofavorito.css">
 
      <!-- link icones -->
      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
@@ -186,7 +187,7 @@
 
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-seychelles" onclick="toggleFavorito('seychelles')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -199,7 +200,7 @@
                 <!-- Card 2 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="/imagem/maldivas.jpg" alt="vietname">
+                        <img src="/imagem/maldivas.jpg" alt="maldivas">
                         <div class="image-label">Maldivas | Partida de Lisboa 20Dez25</div>
                     </div>
                     <div class="card-content">
@@ -210,7 +211,7 @@
                     
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-maldivas" onclick="toggleFavorito('maldivas')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -222,7 +223,7 @@
                 <!-- Card 3 -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="/imagem/borabora.jpg" alt="bali">
+                        <img src="/imagem/borabora.jpg" alt="borabora">
                         <div class="image-label">Bora Bora | Partida do Porto 12Nov25</div>
                     </div>
                     <div class="card-content">
@@ -233,7 +234,7 @@
                         
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-borabora" onclick="toggleFavorito('borabora')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -256,7 +257,7 @@
                         
                         <div class="card-buttons">
                             <a href="../paginas_hoteis/page_hotel_phiphi.html"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-phiphi" onclick="toggleFavorito('phiphi')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -280,7 +281,7 @@
 
                         <div class="card-buttons">
                             <a href="../paginas_hoteis/page_hotel_punta_cana.html"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-bangkok" onclick="toggleFavorito('bangkok')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -292,7 +293,7 @@
                 <!-- Card 6 (Adicional) -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="/imagem/ilhas canarias.jpg" alt="laos">
+                        <img src="/imagem/ilhas canarias.jpg" alt="canarias">
                         <div class="image-label">Ilhas Canárias | Partida de Lisboa 10Out25</div>
                     </div>
                     <div class="card-content">
@@ -304,7 +305,7 @@
 
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-canarias" onclick="toggleFavorito('canarias')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -313,6 +314,11 @@
                 </div>
             </div>
         </div>
+
+     <div id="popup" class="popup">
+      <p>Destino adicionado aos seus favoritos</p>
+      <button onclick="closePopup('canarias'); closePopup('seychelles'); closePopup('bangkok'); closePopup('maldivas');closePopup('borabora'); closePopup('phiphi')" class="popup-btn">Ok</button>
+    </div>
 
 <!-- footer -->
 <footer class="container-fluid text-center rodape">
@@ -330,6 +336,8 @@
         <p>© Copyright 2025 TripUP® - Todos os direitos reservados - </p>
     </div>
   </footer>
+
+<script src="../../scripts/botaofavorito.js"></script>
     
 <script src="/scripts/nav.js"></script>
 

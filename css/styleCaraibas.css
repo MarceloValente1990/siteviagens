@@ -416,6 +416,12 @@
     background: linear-gradient(135deg, #fd99a2);
   }
 
+  .clicado {
+  background-color: red;
+  color: pink;
+  transform: scale(1.05);
+  }
+
 .btn {
     display: inline-block;
     padding: 10px 20px;

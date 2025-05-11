@@ -194,7 +194,7 @@
         <p class="card-price">650€ <span class="card-date">por pessoa</span></p>
         <div class="card-buttons">
           <a href="paginas_hoteis/page.hotel.disney.html"><button class="card-button">Ver</button></a>
-          <button class="card-button favorite-button">
+          <button class="card-button favorite-button" id="heart-btn-disney" onclick="toggleFavorito('disney')">
             <i class="bi bi-heart"></i>
           </button>
         </div>
@@ -220,7 +220,7 @@
         </p>
         <div class="card-buttons">
           <a href="paginas_hoteis/page_hotel_rio_janeiro.html"><button class="card-button">Ver</button></a>
-          <button class="card-button favorite-button">
+          <button class="card-button favorite-button" id="heart-btn-rio" onclick="toggleFavorito('rio')">
             <i class="bi bi-heart"></i>
           </button>
         </div>
@@ -245,7 +245,7 @@
         </p>
         <div class="card-buttons">
           <a href="paginas_hoteis/page_hotel_bangkok.html"><button class="card-button">Ver</button></a>
-          <button class="card-button favorite-button" onclick="validationRequiredInput()">
+          <button class="card-button favorite-button" id="heart-btn-bangkok" onclick="toggleFavorito('bangkok')">
             <i class="bi bi-heart"></i>
           </button>
         </div>
@@ -271,7 +271,7 @@
         </p>
         <div class="card-buttons">
           <a href="paginas_hoteis/page_hotel_havana.html"><button class="card-button">Ver</button></a>
-          <button class="card-button favorite-button" id="heart-btn" onclick="abrirPopup(); removeFav()">
+          <button class="card-button favorite-button" id="heart-btn-havana" onclick="toggleFavorito('havana')">
             <i class="bi bi-heart" ></i>
           </button>
         </div>
@@ -279,7 +279,7 @@
     </div>
     <div id="popup" class="popup">
       <p>Destino adicionado aos seus favoritos</p>
-      <button onclick="closePopup()" class="popup-btn">Ok</button>
+      <button onclick="closePopup('disney'); closePopup('rio'); closePopup('bangkok'); closePopup('havana')" class="popup-btn">Ok</button>
     </div>
     <!-- footer -->
     <footer class="container-fluid text-center rodape">

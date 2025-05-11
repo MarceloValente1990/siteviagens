@@ -11,6 +11,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="/css/styleAsia.css">
+    <link rel="stylesheet" href="../../css/botaofavorito.css">
 
      <!-- link icones -->
      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
@@ -185,7 +186,7 @@
                         
                         <div class="card-buttons">
                             <a href="../paginas_hoteis/page_hotel_phiphi.html"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-phiphi" onclick="toggleFavorito('phiphi')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -207,7 +208,7 @@
                     
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-vietname" onclick="toggleFavorito('vietname')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -230,7 +231,7 @@
                         
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-bali" onclick="toggleFavorito('bali')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -254,7 +255,7 @@
 
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-camboja" onclick="toggleFavorito('camboja')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -278,7 +279,7 @@
 
                         <div class="card-buttons">
                             <a href="../paginas_hoteis/page_hotel_bangkok.html"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-bangkok" onclick="toggleFavorito('bangkok')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -302,7 +303,7 @@
 
                         <div class="card-buttons">
                             <a href="#"><button class="card-button">Ver</button></a>
-                            <button class="card-button favorite-button">
+                            <button class="card-button favorite-button" id="heart-btn-laos" onclick="toggleFavorito('laos')">
                               <i class="bi bi-heart"></i>
                             </button>
                           </div>
@@ -311,6 +312,10 @@
                 </div>
             </div>
         </div>
+    <div id="popup" class="popup">
+      <p>Destino adicionado aos seus favoritos</p>
+      <button onclick="closePopup('laos'); closePopup('phiphi'); closePopup('bangkok'); closePopup('camboja'); closePopup('bali'); closePopup('vietname')" class="popup-btn">Ok</button>
+    </div>
 
 <!-- footer -->
 <footer class="container-fluid text-center rodape">
@@ -328,6 +333,8 @@
         <p>© Copyright 2025 TripUP® - Todos os direitos reservados - </p>
     </div>
   </footer>
+  
+<script src="../../scripts/botaofavorito.js"></script>
     
 <script src="/scripts/nav.js"></script>
 
