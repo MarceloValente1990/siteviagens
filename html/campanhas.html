@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campanhas</title>
+
+    <!---link para bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!---link para css-->
+    <link rel="stylesheet" href="../css/campanhas.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/botaofavorito.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!---links para tipo de letra-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- link icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- link icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+PT:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>TripUP</title>
+  </head>
+  <body>
+ 
+    <!-- Nav -->
+<div class="container-fluid nav1">
+  <div class="row">
+    <p>
+      <a href="../index.html"><img src="../imagens/TripUpLogo.png" class="img-fluid" alt="" id="logo"></a>
+    </p>
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav row5 col-12 col-md-6 col-sm-5">
+            <!-- Destinos -->
+            <li class="nav-item dropdown nav-link">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="destino">
+                Destinos
+              </button>
+              <ul class="dropdown-menu dropdown">
+                <li><a class="dropdown-item" href="../html/paginas_destino/pageEuropa.html">Europa</a></li>
+                <li><a class="dropdown-item" href="../html/paginas_destino/pageCaraibas.html">Caribe</a></li>
+                <li><a class="dropdown-item" href="../html/paginas_destino/pageAsia.html">Sudeste Asiático</a></li>
+                <li><a class="dropdown-item" href="../html/paginas_destino/pageAmerica.html">América do Sul</a></li>
+              </ul>
+            </li>
+
+            <!-- Outros links -->
+            <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+              <a class="nav-link" href="campanhas.html">Campanhas</a>
+            </li>
+            <li class="nav-item nav-link campanha col-12 col-md-4 col-sm-5">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item nav-link campanha1 col-12 col-md-4 col-sm-5">
+              <a class="nav-link" href="contatos.html">Contactos</a>
+            </li>
+
+            <!-- Idioma -->
+            <li class="nav-item dropdown nav-link col-12 col-md-4 col-sm-5">
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="lingua">
+                <img src="../imagens/flagportugal.png" id="language" alt="">
+              </button>
+              <ul class="dropdown-menu dropdown w-auto" id="language" >
+                <li><a class="dropdown-item" href="../indexeng.html" id="language"><img src="../imagens/flagengland.png" alt="" id="language"></a></li>
+                <li><a class="dropdown-item" href="../indexes.html" id="language"><img src="../imagens/flagspain.png" alt="" id="language"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+    <!---aviao-->
+    <div class="airplane">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        width="48px"
+        height="48px"
+      >
+        <path
+          d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V18l-2 1v2l3-1 3 1v-2l-2-1v-4.5l8 2.5z"
+        />
+      </svg>
+    </div>
+
+    <header class="page-header">
+      <div class="page-header-content">
+        <h1>Campanhas</h1>
+        <p>Cada viagem, uma nova história para contar</p>
+      </div>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,256L48,240C96,224,192,192,288,170.7C384,149,480,139,576,165.3C672,192,768,256,864,245.3C960,235,1056,149,1152,128C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!---card 1-->
+    <div class="card-horizontal">
+      <div class="card-image">
+        <img src="../imagens/paris.jpg" alt="Travel Destination" />
+      </div>
+      <div class="card-content">
+        <h3 class="title-card">DISNEYLAND PARIS 🏰</h3>
+        <p>
+          ✨ Viva a Magia da Disney! ✨ <br />
+          Descubra um mundo encantado com quem você mais ama! <br />
+          Bilhetes + Hotel + Diversão garantida!
+        </p>
+        <p class="card-date">Válido de: 10/Junho/2025 - 20/Junho/2025</p>
+        <p class="card-duration">5 Dias / 4 Noites</p>
+        <p class="card-price">650€ <span class="card-date">por pessoa</span></p>
+        <div class="card-buttons">
+          <a href="paginas_hoteis/page.hotel.disney.html"><button class="card-button">Ver</button></a>
+          <button class="card-button favorite-button" id="heart-btn-disney" onclick="toggleFavorito('disney')">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!---card 2-->
+    <div class="card-horizontal">
+      <div class="card-image">
+        <img src="../imagens/rio.jpg" alt="Travel Destination" />
+      </div>
+      <div class="card-content">
+        <h3 class="title-card">RIO DE JANEIRO</h3>
+        <p>
+          O destino perfeito para quem adora sol e paisagens de tirar o fôlego
+          🌴 <br />
+          Voo (OPO) + Hotel
+        </p>
+        <p class="card-date">Válido de: 20/Setembro/2025 - 27/Setembro/2025</p>
+        <p class="card-duration">9 Dias / 8 Noites</p>
+        <p class="card-price">
+          1300€ <span class="card-date">por pessoa</span>
+        </p>
+        <div class="card-buttons">
+          <a href="paginas_hoteis/page_hotel_rio_janeiro.html"><button class="card-button">Ver</button></a>
+          <button class="card-button favorite-button" id="heart-btn-rio" onclick="toggleFavorito('rio')">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!---card 3-->
+    <div class="card-horizontal">
+      <div class="card-image">
+        <img src="../imagens/bagkok.jpg" alt="Travel Destination" />
+      </div>
+      <div class="card-content">
+        <h3 class="title-card">BANGKOK</h3>
+        <p>
+          Mergulhe na cultura tailandesa 🌆<br />
+          Voo (OPO) + Hotel
+        </p>
+        <p class="card-date">Válido de: 07/Julho/2025 - 15/Julho/2025</p>
+        <p class="card-duration">8 Dias / 7 Noites</p>
+        <p class="card-price">
+          1300€ <span class="card-date">por pessoa</span>
+        </p>
+        <div class="card-buttons">
+          <a href="paginas_hoteis/page_hotel_bangkok.html"><button class="card-button">Ver</button></a>
+          <button class="card-button favorite-button" id="heart-btn-bangkok" onclick="toggleFavorito('bangkok')">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!---card 4-->
+    <div class="card-horizontal">
+      <div class="card-image">
+        <img src="../imagens/havana.jpg" alt="Travel Destination" />
+      </div>
+      <div class="card-content">
+        <h3 class="title-card">HAVANA</h3>
+        <p>
+          O destino perfeito para quem procura história, cultura e a magia dos
+          carros clássicos 🏝️<br />
+          Voo (OPO) + Hotel
+        </p>
+        <p class="card-date">Válido de: 02/Abril/2026 - 11/Abril/2026</p>
+        <p class="card-duration">7 Dias / 6 Noites</p>
+        <p class="card-price">
+          1100€ <span class="card-date">por pessoa</span>
+        </p>
+        <div class="card-buttons">
+          <a href="paginas_hoteis/page_hotel_havana.html"><button class="card-button">Ver</button></a>
+          <button class="card-button favorite-button" id="heart-btn-havana" onclick="toggleFavorito('havana')">
+            <i class="bi bi-heart" ></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <p>Destino adicionado aos seus favoritos</p>
+      <button onclick="closePopup('disney'); closePopup('rio'); closePopup('bangkok'); closePopup('havana')" class="popup-btn">Ok</button>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid text-center rodape">
+      <div class="living">
+        <p><img src="../imagens/TripUpLogo.png" alt="" id="logo2" /></p>
+      </div>
+      <div>
+        <p>
+          <a href="../html/manutencao.html" class="icone"><i class="fi-brands-facebook"></i></a>
+          <a href="../html/manutencao.html" class="icone"><i class="fi-brands-instagram"></i></a>
+          <a href="../html/manutencao.html" class="icone"><i class="fi-brands-twitter-alt-circle"></i></a>
+        </p>
+      </div>
+      <div class="copy">
+        <p>© Copyright 2025 TripUP® - Todos os direitos reservados -</p>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-...hash..."
+    crossorigin="anonymous"
+  ></script>
+  <script src="../scripts/airplane.js"></script>
+  <script src="../scripts/nav.js"></script>
+  <script src="../scripts/botaofavorito.js"></script>
+</html>

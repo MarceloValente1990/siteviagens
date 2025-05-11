@@ -1,0 +1,407 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+.title-content {
+  background-image: url("../imagens/aviao.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 210px;
+}
+
+.blog-title {
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Dancing Script";
+}
+
+.sub-title {
+  font-size: 25px;
+  font-family: "Arial";
+}
+
+.sub-texto {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Dancing Script';
+  margin-bottom: 40px;
+  color: #180F4A;
+}
+
+.places {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.blog {
+  position: relative;
+  width: 35em;
+  height: 40em;
+  background: no-repeat;
+  background-size: 35em 40em;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 0.7em;
+}
+
+.blog * {
+  position: relative;
+  z-index: 2;
+}
+
+.blog:hover .color-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.blog:hover .info {
+  bottom: -3em;
+  opacity: 1;
+  font-family: 'Arial';
+}
+
+.color-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.7s;
+  background: rgba(74, 100, 114, 0.3);
+  z-index: 1;
+  border-radius: 0.7em;
+}
+
+.title-box {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+  font-family: 'Arial';
+}
+
+.title-box hr {
+  margin-top: -0.4em;
+  margin-bottom: 1em;
+  width: 5em;
+  height: 0.25em;
+  box-sizing: content-box;
+  border: none;
+  background: white;
+}
+
+h3 {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.4em;
+  text-align: center;
+  color: #accff0;
+}
+
+.intro {
+  width: 170px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.info {
+  font-family: "Droid Serif", serif;
+  font-size: 1.2em;
+  color: #ddd;
+  line-height: 1.1em;
+  padding: 0 2em;
+  position: relative;
+  bottom: -4em;
+  opacity: 0;
+  background: transparent;
+  transition: opacity 0.3s, bottom 0.3s;
+  text-align: center;
+}
+
+/* Blog background image variations */
+.blog-bangkok {
+  background-image: url("../imagens/bangkok_2.jpg");
+}
+
+.blog-istambul {
+  background-image: url("../imagens/istambul.jpg");
+}
+
+.blog-londres {
+  background-image: url("../imagens/londres.jpg");
+}
+
+.blog-hongkong {
+  background-image: url("../imagens/hong_kong.jpg");
+}
+
+.container-madeira {
+  background-color: #f2fbfb;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.madeira-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  color: #180F4A;
+}
+
+.mad-text {
+  font-family: 'Arial';
+}
+
+.reviews {
+  font-family: 'Dancing Script';
+  text-align: center;
+  margin: 45px;
+  font-size: 40px;
+  color:#180F4A; ;
+}
+
+.card {
+  border: 2px solid #faf5f5;
+  margin-bottom: 10px;
+  height: 250px;
+}
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.rounded-circle {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.ratings i {
+  color: #FFD700;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 16px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease, z-index 0s linear 0.3s;
+  /* Smooth transition */
+
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+.rodape {
+  background-color: #f2fbfb;
+  position: absolute;
+}
+
+#logo2{
+  width: 200px;
+  height: 170px;
+}
+
+.copy {
+  color: #180F4A;
+  font-family: "Jura", sans-serif;
+  font-size: 15px;
+}
+
+.icone {
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 1%;
+  color: #180F4A;
+}
+
+/* Phone Card */
+.phone-card {
+  width: 210px;
+  height: 400px;
+  background: black;
+  border-radius: 35px;
+  border: 2px solid rgb(40, 40, 40);
+  padding: 7px;
+  position: relative;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.486);
+}
+
+.phone-card-inner {
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.carousel {
+  height: 100%;
+}
+
+/* Carousel styling */
+.carousel-inner {
+  height: 100%;
+  /* Ensure inner carousel fills the phone */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  /* Ensure images fill the screen */
+  width: 100%;
+  height: 100%;
+}
+
+.phone-top {
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 35%;
+  height: 18px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.phone-speaker {
+  position: absolute;
+  top: 2px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 40%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(20, 20, 20);
+}
+
+.phone-camera {
+  position: absolute;
+  top: 6px;
+  right: 84%;
+  transform: translate(50%, 0%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+.phone-int {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 255, 0.212);
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.mobile {
+  margin-top: 20px;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+  position: absolute;
+  width: 2px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  height: 45px;
+  top: 30%;
+  right: -4px;
+  background-image: linear-gradient(to right, #111111, #222222, #333333, #464646, #595959);
+}
+
+.btn2,
+.btn3 {
+  transform: scale(-1);
+  left: -4px;
+}
+
+.btn2,
+.btn3 {
+  transform: scale(-1);
+  height: 30px;
+}
+
+.btn2 {
+  top: 26%
+}
+
+.btn3 {
+  top: 36%
+}

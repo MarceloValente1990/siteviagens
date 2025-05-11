@@ -1,0 +1,105 @@
+.blog{
+    background-color: rgb(237, 237, 234);;
+    min-height: 350px;   
+}
+.plane{
+    height: 60px;
+    margin-top: 40px;
+}
+#dicas{
+    border-bottom: solid rgb(20, 31, 180);
+    margin-bottom: 20px;
+    padding-bottom: 10px; 
+    font-family: "Dancing Script", sans-serif; 
+    color: #180F4A;
+    font-size: 55px;
+}
+#blog2{
+    text-decoration: none;
+    color: #180F4A;
+    font-size: 20px;
+    border: solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: transparent;
+    margin-top: 15px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+#blog2:hover{
+    background-color:#180F4A;
+    color: white;
+}
+#blog2:active{
+    transform: translateY(3px);
+}
+.rodape{
+    background-color: #f2fbfb;
+   
+}
+#logo2{
+    width: 200px;
+    height: 170px;
+}
+.copy{
+    color: #180F4A;
+    font-family: "Jura", sans-serif;
+    font-size: 15px;
+}
+.icone{
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 1%;
+    color: #180F4A;
+    
+}
+@media screen and (max-width: 768px) {
+  .blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 20px;
+}
+
+  .plane {
+    height: 40px;
+    display: inline-block;
+  }
+  #dicas {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  #blog2 {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .rodape {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #logo2 {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .copy {
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .icone {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+  }
+}
